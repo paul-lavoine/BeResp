@@ -82,15 +82,14 @@
 			path = "New Group";
 			sourceTree = "<group>";
 		};
-		3A3AB09F20417CA600A94EE8 /* Root */ = {
+		3A3AB09F20417CA600A94EE8 /* Menu */ = {
 			isa = PBXGroup;
 			children = (
 				3A3AB0A220417D1F00A94EE8 /* MainViewController.swift */,
 				3A3AB09D20417AF100A94EE8 /* MenuViewController.swift */,
 				3A3AB0A020417CB800A94EE8 /* NavigationController.swift */,
-				3AC3D01520416AA00086077E /* RootViewController.swift */,
 			);
-			path = Root;
+			path = Menu;
 			sourceTree = "<group>";
 		};
 		3AC3CFF3204164D90086077E = {
@@ -139,7 +138,8 @@
 				3A19D00C204438EC00FC1ADB /* New Group */,
 				3A19D00B2044360700FC1ADB /* Model */,
 				3A19D0082044348500FC1ADB /* HomePage */,
-				3A3AB09F20417CA600A94EE8 /* Root */,
+				3A3AB09F20417CA600A94EE8 /* Menu */,
+				3AC3D01520416AA00086077E /* RootViewController.swift */,
 				3AC3D001204164D90086077E /* LoginViewController.swift */,
 				3AC3D011204169EC0086077E /* ProfileViewController.swift */,
 				3AC3D01320416A0B0086077E /* ShopsViewController.swift */,
