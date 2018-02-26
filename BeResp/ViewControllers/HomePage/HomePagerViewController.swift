@@ -38,7 +38,9 @@ class HomePagerViewController: UIPageViewController {
     }
     
     private func homeDescriptionViewController(position: Int) -> UIViewController {
-        return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "HomeDescriptionViewController")
+        let controller: HomeDescriptionViewController =  UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "HomeDescriptionViewController") as! HomeDescriptionViewController
+        controller.currentPosition = position
+        return controller
     }
     
     func presentationCountForPageViewController(pageViewController: UIPageViewController) -> Int {

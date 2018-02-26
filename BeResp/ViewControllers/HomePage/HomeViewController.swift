@@ -23,6 +23,8 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         
         pageControl.numberOfPages = (homePagerViewController?.orderedViewControllers.count)!
+        pageControl.pageIndicatorTintColor = UIColor.init(red: 203.0/255, green: 203.0/255, blue: 203.0/255, alpha: 0.5)
+        pageControl.currentPageIndicatorTintColor = UIColor.init(red: 0.0/255, green: 220.0/255, blue: 153.0/255, alpha: 1)
         pageControl.addTarget(self, action: #selector(didChangePageControlValue), for: .valueChanged)
     }
 

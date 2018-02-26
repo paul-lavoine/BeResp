@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A19D00A2044349900FC1ADB /* HomeDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A19D0092044349900FC1ADB /* HomeDescriptionViewController.swift */; };
 		3A3AB09E20417AF100A94EE8 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3AB09D20417AF100A94EE8 /* MenuViewController.swift */; };
 		3A3AB0A120417CB900A94EE8 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3AB0A020417CB800A94EE8 /* NavigationController.swift */; };
 		3A3AB0A320417D1F00A94EE8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3AB0A220417D1F00A94EE8 /* MainViewController.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A19D0092044349900FC1ADB /* HomeDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDescriptionViewController.swift; sourceTree = "<group>"; };
 		3A3AB09D20417AF100A94EE8 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		3A3AB0A020417CB800A94EE8 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		3A3AB0A220417D1F00A94EE8 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A19D0082044348500FC1ADB /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				3A19D0092044349900FC1ADB /* HomeDescriptionViewController.swift */,
+				3A5945082041745800BE94AD /* HomePagerViewController.swift */,
+				3AC3D01820416C2E0086077E /* HomeViewController.swift */,
+			);
+			path = HomePage;
+			sourceTree = "<group>";
+		};
+		3A19D00B2044360700FC1ADB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3A19D00C204438EC00FC1ADB /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		3A3AB09F20417CA600A94EE8 /* Root */ = {
 			isa = PBXGroup;
 			children = (
@@ -110,9 +136,10 @@
 		3AC3D01B20416CDB0086077E /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				3A19D00C204438EC00FC1ADB /* New Group */,
+				3A19D00B2044360700FC1ADB /* Model */,
+				3A19D0082044348500FC1ADB /* HomePage */,
 				3A3AB09F20417CA600A94EE8 /* Root */,
-				3A5945082041745800BE94AD /* HomePagerViewController.swift */,
-				3AC3D01820416C2E0086077E /* HomeViewController.swift */,
 				3AC3D001204164D90086077E /* LoginViewController.swift */,
 				3AC3D011204169EC0086077E /* ProfileViewController.swift */,
 				3AC3D01320416A0B0086077E /* ShopsViewController.swift */,
@@ -280,6 +307,7 @@
 				3A5945092041745800BE94AD /* HomePagerViewController.swift in Sources */,
 				3AC3D012204169EC0086077E /* ProfileViewController.swift in Sources */,
 				3A3AB0A120417CB900A94EE8 /* NavigationController.swift in Sources */,
+				3A19D00A2044349900FC1ADB /* HomeDescriptionViewController.swift in Sources */,
 				3AC3D002204164D90086077E /* LoginViewController.swift in Sources */,
 				3AC3D000204164D90086077E /* AppDelegate.swift in Sources */,
 				3AC3D01920416C2E0086077E /* HomeViewController.swift in Sources */,
