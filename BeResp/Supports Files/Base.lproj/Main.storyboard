@@ -689,11 +689,23 @@ d'humains reponsables</string>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ah4-VU-7DN">
+                                        <rect key="frame" x="311" y="15" width="54" height="34"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cuU-2B-stU">
+                                        <rect key="frame" x="10" y="15" width="54" height="34"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="765-H5-42b"/>
+                                    <constraint firstAttribute="trailing" secondItem="ah4-VU-7DN" secondAttribute="trailing" constant="10" id="OA5-q9-9dh"/>
+                                    <constraint firstItem="ah4-VU-7DN" firstAttribute="centerY" secondItem="h8i-Qm-fRc" secondAttribute="centerY" id="RhS-vT-2rf"/>
+                                    <constraint firstItem="cuU-2B-stU" firstAttribute="centerY" secondItem="h8i-Qm-fRc" secondAttribute="centerY" id="bc6-3p-5f2"/>
                                     <constraint firstItem="Pla-qc-tnr" firstAttribute="centerY" secondItem="h8i-Qm-fRc" secondAttribute="centerY" id="bgU-R0-35h"/>
+                                    <constraint firstItem="cuU-2B-stU" firstAttribute="leading" secondItem="h8i-Qm-fRc" secondAttribute="leading" constant="10" id="eKt-Jn-OMv"/>
                                     <constraint firstItem="Pla-qc-tnr" firstAttribute="centerX" secondItem="h8i-Qm-fRc" secondAttribute="centerX" id="xnC-tQ-m3h"/>
                                 </constraints>
                             </view>
