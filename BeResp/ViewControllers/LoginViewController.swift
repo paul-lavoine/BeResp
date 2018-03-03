@@ -14,12 +14,17 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         
         let controller = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "HomeViewController")
-        self.navigationController?.present(controller, animated: true, completion: nil)
+//        self.navigationController?.present(controller, animated: true, completion: nil)
+        
+        pushProfileViewController()
     }
 
     @IBAction func connectUser(_ sender: Any) {
-        let rootViewController: RootViewController  = RootViewController()
-        let navigationController = NavigationController(rootViewController: rootViewController)
+        pushProfileViewController()
+    }
+    
+    func pushProfileViewController() {
+        let navigationController = NavigationController(rootViewController: StoryboardManager.profileViewController())
         
         let mainViewController = MainViewController()
         mainViewController.rootViewController = navigationController

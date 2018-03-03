@@ -9,8 +9,7 @@
 import UIKit
 
 struct MenuCellConstant {
-    static let nib                = UINib(nibName: "MenuCell", bundle: nil)
-    static let reuseIdentifier    = "MenuCellReuseIdentifier"
+    static let reuseIdentifier    = "MenuCell"
 }
 
 class MenuCell: UITableViewCell {
@@ -26,7 +25,7 @@ class MenuCell: UITableViewCell {
         super.prepareForReuse()
     }
     
-    func setItem(type: MenuType) {
+    func configure(with type: MenuType) {
         titleLabel.text = type.rawValue
     }
         

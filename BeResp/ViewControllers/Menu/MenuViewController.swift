@@ -9,11 +9,11 @@
 import UIKit
 
 enum MenuType: String {
-    case profil = "Profil"
-    case favorites = "Mes favoris"
+    case profil        = "Profil"
+    case favorites     = "Mes favoris"
     case notifications = "Notification"
-    case settings = "Réglages"
-    case loggout = "Se déconnecter"
+    case settings      = "Réglages"
+    case loggout       = "Se déconnecter"
 }
 
 class MenuViewController: UIViewController {
@@ -32,7 +32,34 @@ class MenuViewController: UIViewController {
 }
 
 extension MenuViewController: UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let type: MenuType = tabsMenu[indexPath.row]
+        var viewController: UIViewController?
+        
+        switch type {
+        case .profil:
+            viewController = StoryboardManager.profileViewController()
+            break
+        case .favorites:
+            viewController = StoryboardManager.favoritesViewController()
+            break
+        case .notifications:
+            break
+        case .settings:
+            break
+        case .loggout:
+        break
+        }
+        
+        guard let vc = viewController else {
+            return
+        }
+        let mainViewController = sideMenuController!
+        let navigationController = mainViewController.rootViewController as! NavigationController
+        navigationController.pushViewController(vc, animated: true)
+        
+        mainViewController.hideLeftView(animated: true, completionHandler: nil)
+    }
 }
 
 extension MenuViewController: UITableViewDataSource {
@@ -46,7 +73,7 @@ extension MenuViewController: UITableViewDataSource {
         }
         
         let tab: MenuType = tabsMenu[indexPath.row]
-        cell.setItem(type: tab)
+        cell.configure(with: tab)
         
         return cell
     }
