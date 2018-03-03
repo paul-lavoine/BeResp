@@ -469,7 +469,7 @@ d'humains reponsables</string>
                                                 </constraints>
                                                 <state key="normal" image="picto_localize"/>
                                             </button>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h72-xa-cJu">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Recherche d'un producteur" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h72-xa-cJu">
                                                 <rect key="frame" x="60" y="0.0" width="255" height="50"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="textColor"/>
@@ -604,8 +604,8 @@ d'humains reponsables</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zUe-wL-02h">
-                                        <rect key="frame" x="20" y="284.5" width="335" height="120"/>
-                                        <color key="backgroundColor" red="0.68199443820000005" green="0.6355014443" blue="0.62352788449999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <rect key="frame" x="0.0" y="284.5" width="375" height="160"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -618,12 +618,12 @@ d'humains reponsables</string>
                                     <constraint firstAttribute="trailing" secondItem="ROF-C5-qf8" secondAttribute="trailing" constant="20" id="RtV-fJ-XOE"/>
                                     <constraint firstItem="sNd-4A-E3N" firstAttribute="centerX" secondItem="XGg-f1-MBr" secondAttribute="centerX" id="Xfi-d7-Z7L"/>
                                     <constraint firstAttribute="trailing" secondItem="BKi-hI-0fh" secondAttribute="trailing" constant="30" id="Ykg-I9-qFg"/>
-                                    <constraint firstAttribute="trailing" secondItem="zUe-wL-02h" secondAttribute="trailing" constant="20" id="c1B-o1-pLa"/>
+                                    <constraint firstAttribute="trailing" secondItem="zUe-wL-02h" secondAttribute="trailing" id="c1B-o1-pLa"/>
                                     <constraint firstItem="BKi-hI-0fh" firstAttribute="leading" secondItem="XGg-f1-MBr" secondAttribute="leading" constant="30" id="k5Z-CJ-jfY"/>
-                                    <constraint firstItem="zUe-wL-02h" firstAttribute="leading" secondItem="XGg-f1-MBr" secondAttribute="leading" constant="20" id="lES-CI-0by"/>
+                                    <constraint firstItem="zUe-wL-02h" firstAttribute="leading" secondItem="XGg-f1-MBr" secondAttribute="leading" id="lES-CI-0by"/>
                                     <constraint firstItem="sNd-4A-E3N" firstAttribute="leading" secondItem="XGg-f1-MBr" secondAttribute="leading" constant="20" id="s8c-am-apM"/>
                                     <constraint firstItem="sNd-4A-E3N" firstAttribute="top" secondItem="BKi-hI-0fh" secondAttribute="bottom" constant="60" id="vmf-TF-E9S"/>
-                                    <constraint firstAttribute="bottom" secondItem="zUe-wL-02h" secondAttribute="bottom" constant="40" id="xf9-9e-7om"/>
+                                    <constraint firstAttribute="bottom" secondItem="zUe-wL-02h" secondAttribute="bottom" id="xf9-9e-7om"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -641,6 +641,7 @@ d'humains reponsables</string>
                         <viewLayoutGuide key="safeArea" id="Iv7-de-IMy"/>
                     </view>
                     <connections>
+                        <outlet property="nearestShopContainerView" destination="zUe-wL-02h" id="Arj-sY-7UC"/>
                         <outlet property="searchContainerView" destination="BKi-hI-0fh" id="eOW-60-MnT"/>
                     </connections>
                 </viewController>

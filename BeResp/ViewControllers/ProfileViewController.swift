@@ -11,6 +11,7 @@ import UIKit
 class ProfileViewController: UIViewController, UIGestureRecognizerDelegate {
     
     @IBOutlet weak var searchContainerView: UIView!
+    @IBOutlet weak var nearestShopContainerView: ShopCell!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,22 +29,24 @@ class ProfileViewController: UIViewController, UIGestureRecognizerDelegate {
         searchContainerView.layer.shadowRadius = 10.0
         searchContainerView.layer.shadowOpacity = 0.5
         searchContainerView.layer.shadowPath = shadowPath.cgPath
+        
+        let shop: ShopCell = ShopCell.instanceFromNib()
+        shop.frame = CGRect(x: 3, y: 0, width: self.view.frame.size.width - 7, height: ShopCell.heightCell)
+        shop.configure(with: ShopsController.shared.nearestShop())
+        nearestShopContainerView.addSubview(shop)
     }
     
     @IBAction func searchAction(_ sender: Any) {
-        print("COUCCOU")
+        
     }
 
     @IBAction func commercesAction(_ sender: Any) {
-       print("COUCCOU 1")
         self.navigationController?.pushViewController(StoryboardManager.shopsViewController(), animated: true)
     }
     
     @IBAction func calendarAction(_ sender: Any) {
-        print("COUCCOU 2 ")
     }
     
     @IBAction func organisationsAction(_ sender: Any) {
-        print("COUCCOU 3")
     }
 }

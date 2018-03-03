@@ -22,7 +22,7 @@ class ShopsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let height = CGFloat(190.0)
+        let height = ShopCell.heightCell
         tableView.estimatedRowHeight = height
         tableView.rowHeight = height
         tableView.register(ShopCellConstant.nib, forCellReuseIdentifier: ShopCellConstant.reuseIdentifier)

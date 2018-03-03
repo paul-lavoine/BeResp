@@ -15,6 +15,8 @@ struct ShopCellConstant {
 
 class ShopCell: UITableViewCell {
     
+    static let heightCell = CGFloat(190.0)
+    
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var shopImageView: UIImageView!
     
@@ -39,6 +41,10 @@ class ShopCell: UITableViewCell {
     @IBOutlet weak var fifthStarImageView: UIImageView!
     
     @IBOutlet weak var commentCountLabel: UILabel!
+    
+    class func instanceFromNib() -> ShopCell {
+        return UINib(nibName: ShopCellConstant.reuseIdentifier, bundle: nil).instantiate(withOwner: nil, options: nil)[0] as! ShopCell
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
