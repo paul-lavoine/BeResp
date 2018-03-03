@@ -27,8 +27,12 @@
                                 <rect key="frame" x="0.0" y="0.0" width="250" height="174.5"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TsF-va-mtC">
-                                <rect key="frame" x="230" y="88" width="286" height="87"/>
+                                <rect key="frame" x="230" y="88" width="266" height="87"/>
                                 <color key="backgroundColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Db1-GQ-ZNN">
+                                <rect key="frame" x="383" y="87.5" width="133" height="87"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0T7-fM-4F1">
                                 <rect key="frame" x="230" y="0.0" width="286" height="154.5"/>
@@ -74,16 +78,20 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="lTX-vU-fr7" firstAttribute="leading" secondItem="8yB-na-uos" secondAttribute="leading" id="5W1-3P-jyv"/>
+                            <constraint firstItem="Db1-GQ-ZNN" firstAttribute="width" secondItem="TsF-va-mtC" secondAttribute="width" multiplier="1:2" id="HBI-mR-Spc"/>
                             <constraint firstItem="TsF-va-mtC" firstAttribute="height" secondItem="8yB-na-uos" secondAttribute="height" multiplier="1:2" id="Kh6-Ui-Ldr"/>
                             <constraint firstItem="0T7-fM-4F1" firstAttribute="leading" secondItem="TsF-va-mtC" secondAttribute="leading" id="Kl5-eQ-Nfx"/>
+                            <constraint firstAttribute="bottom" secondItem="Db1-GQ-ZNN" secondAttribute="bottom" id="UiD-bE-VoS"/>
                             <constraint firstItem="lTX-vU-fr7" firstAttribute="top" secondItem="8yB-na-uos" secondAttribute="top" id="bWa-xN-T02"/>
                             <constraint firstAttribute="bottom" secondItem="lTX-vU-fr7" secondAttribute="bottom" id="ddS-c6-PGZ"/>
-                            <constraint firstAttribute="trailing" secondItem="TsF-va-mtC" secondAttribute="trailing" id="eX0-xx-sgI"/>
+                            <constraint firstAttribute="trailing" secondItem="Db1-GQ-ZNN" secondAttribute="trailing" id="e3a-oy-Jji"/>
+                            <constraint firstAttribute="trailing" secondItem="TsF-va-mtC" secondAttribute="trailing" constant="20" id="eX0-xx-sgI"/>
                             <constraint firstAttribute="trailing" secondItem="0T7-fM-4F1" secondAttribute="trailing" id="fcn-8R-KGO"/>
                             <constraint firstAttribute="bottom" secondItem="0T7-fM-4F1" secondAttribute="bottom" constant="20" id="gYX-X1-ioM"/>
                             <constraint firstItem="0T7-fM-4F1" firstAttribute="top" secondItem="8yB-na-uos" secondAttribute="top" id="o9R-iV-JYQ"/>
                             <constraint firstItem="TsF-va-mtC" firstAttribute="leading" secondItem="lTX-vU-fr7" secondAttribute="trailing" constant="-20" id="pKM-Tj-CyK"/>
                             <constraint firstAttribute="bottom" secondItem="TsF-va-mtC" secondAttribute="bottom" id="ptx-7D-BcD"/>
+                            <constraint firstItem="Db1-GQ-ZNN" firstAttribute="height" secondItem="TsF-va-mtC" secondAttribute="height" id="zVn-5N-5Ll"/>
                         </constraints>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7gt-sq-gXR">
@@ -149,6 +157,7 @@
             <connections>
                 <outlet property="containerView" destination="8yB-na-uos" id="pd2-2Q-PeH"/>
                 <outlet property="informationContainerView" destination="0T7-fM-4F1" id="MsQ-PM-W0g"/>
+                <outlet property="informationRightCornerRoundedView" destination="Db1-GQ-ZNN" id="Dho-bP-6h1"/>
                 <outlet property="informationRoundedContainerView" destination="TsF-va-mtC" id="ImP-1n-BUD"/>
                 <outlet property="openningTimeLabel" destination="jzv-tJ-ABa" id="k09-ZI-c4u"/>
                 <outlet property="priceTypeLabel" destination="VDq-kv-nb5" id="BZO-0O-NzX"/>

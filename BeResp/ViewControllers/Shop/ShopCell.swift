@@ -20,6 +20,7 @@ class ShopCell: UITableViewCell {
     
     @IBOutlet weak var informationRoundedContainerView: UIView!
     @IBOutlet weak var informationContainerView: UIView!
+    @IBOutlet weak var informationRightCornerRoundedView: UIView!
     
     @IBOutlet weak var shopTitleLabel: UILabel!
     @IBOutlet weak var shopCategoryLabel: UILabel!
@@ -34,6 +35,7 @@ class ShopCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
+        informationRightCornerRoundedView.layer.cornerRadius = 5.0
         shopImageView.layer.cornerRadius = 5.0
         informationRoundedContainerView.layer.cornerRadius = 15.0
         ratingRoundedView.layer.cornerRadius = 8.0
