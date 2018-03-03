@@ -38,14 +38,15 @@ class ShopCell: UITableViewCell {
         informationRoundedContainerView.layer.cornerRadius = 15.0
         ratingRoundedView.layer.cornerRadius = 8.0
         
-      /*  let shadowPath = UIBezierPath(rect: containerView.bounds)
-        containerView.layer.masksToBounds = false
-        containerView.layer.shadowColor = UIColor.black.cgColor
-        containerView.layer.shadowOffset = CGSize(width: 10.0, height: 10.0)
-        containerView.layer.shadowRadius = 10.0
-        containerView.layer.shadowOpacity = 0.5
-        containerView.layer.shadowPath = shadowPath.cgPath
-        */
+       /* let shadowPath = UIBezierPath(rect: contentView.bounds)
+        contentView.layer.masksToBounds = false
+        contentView.layer.shadowColor = UIColor.black.cgColor
+        contentView.layer.shadowOffset = CGSize(width: 10.0, height: 10.0)
+        contentView.layer.shadowRadius = 10.0
+        contentView.layer.shadowOpacity = 0.5
+        contentView.layer.shadowPath = shadowPath.cgPath*/
+ 
+ 
         let ratingShadowPath = UIBezierPath(rect: ratingRoundedView.bounds)
         ratingRoundedView.layer.masksToBounds = false
         ratingRoundedView.layer.shadowColor = UIColor.black.cgColor
