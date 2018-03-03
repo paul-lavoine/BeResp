@@ -144,15 +144,15 @@ d'humains reponsables</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9ld-RE-QqK">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9ld-RE-QqK">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.96852236986160278" green="0.96868795156478882" blue="0.96851199865341187" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MenuCell" rowHeight="85" id="3Jz-ku-M7e" customClass="MenuCell" customModule="BeResp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="85"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3Jz-ku-M7e" id="NGl-Jy-CWe">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="84.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="85"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Uk6-0x-G5K">
@@ -171,11 +171,13 @@ d'humains reponsables</string>
                                             <constraints>
                                                 <constraint firstItem="CXh-pk-fdv" firstAttribute="leading" secondItem="Uk6-0x-G5K" secondAttribute="trailing" constant="30" id="0me-vO-hqt"/>
                                                 <constraint firstAttribute="bottom" secondItem="Uk6-0x-G5K" secondAttribute="bottom" id="8XW-Co-jhl"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="CXh-pk-fdv" secondAttribute="trailing" constant="20" symbolic="YES" id="Mpj-Ey-w2M"/>
                                                 <constraint firstItem="Uk6-0x-G5K" firstAttribute="leading" secondItem="NGl-Jy-CWe" secondAttribute="leading" id="a9N-Nw-F9v"/>
                                                 <constraint firstItem="Uk6-0x-G5K" firstAttribute="top" secondItem="NGl-Jy-CWe" secondAttribute="top" id="b9Z-mk-p9B"/>
                                                 <constraint firstItem="CXh-pk-fdv" firstAttribute="centerY" secondItem="NGl-Jy-CWe" secondAttribute="centerY" id="yQL-Tn-7bj"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <outlet property="iconImageView" destination="Uk6-0x-G5K" id="Mji-Yb-hHL"/>
                                             <outlet property="titleLabel" destination="CXh-pk-fdv" id="hnm-nP-zbn"/>
@@ -198,12 +200,35 @@ d'humains reponsables</string>
                         <viewLayoutGuide key="safeArea" id="1hR-Eb-zQC"/>
                     </view>
                     <connections>
+                        <outlet property="tableHeaderView" destination="sqL-o9-K3n" id="R86-eR-3UM"/>
                         <outlet property="tableView" destination="9ld-RE-QqK" id="sGN-KS-rox"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bC9-F5-6Y7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="sqL-o9-K3n" customClass="MenuHeaderView" customModule="BeResp" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VDe-4G-hC3">
+                            <rect key="frame" x="70.5" y="14" width="100" height="100"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="VDe-4G-hC3" secondAttribute="height" id="bsX-xK-X6Y"/>
+                                <constraint firstAttribute="height" constant="100" id="uXQ-DL-5DA"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="VDe-4G-hC3" firstAttribute="centerX" secondItem="7Ue-bF-Iu8" secondAttribute="centerX" id="MfJ-93-SL5"/>
+                        <constraint firstItem="VDe-4G-hC3" firstAttribute="centerY" secondItem="7Ue-bF-Iu8" secondAttribute="centerY" id="a9P-Ju-JTG"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="7Ue-bF-Iu8"/>
+                    <connections>
+                        <outlet property="userImageView" destination="VDe-4G-hC3" id="SHm-Kr-Nd8"/>
+                    </connections>
+                </view>
             </objects>
-            <point key="canvasLocation" x="-632.79999999999995" y="784.85757121439292"/>
+            <point key="canvasLocation" x="-644" y="1036"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="F6N-ev-7la">
@@ -235,6 +260,7 @@ d'humains reponsables</string>
                             <constraint firstItem="Ywz-ZK-Z3A" firstAttribute="top" secondItem="6hC-3g-fO0" secondAttribute="top" id="01Q-4y-Og3"/>
                             <constraint firstItem="n9h-EW-g1f" firstAttribute="top" secondItem="6hC-3g-fO0" secondAttribute="top" constant="20" id="5t1-eu-cfC"/>
                             <constraint firstItem="6hC-3g-fO0" firstAttribute="bottom" secondItem="85q-SU-9w9" secondAttribute="bottom" constant="20" id="AT3-DH-be3"/>
+                            <constraint firstItem="n9h-EW-g1f" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="obf-iH-3Q5" secondAttribute="leading" constant="20" symbolic="YES" id="NUq-nS-lXJ"/>
                             <constraint firstItem="Ywz-ZK-Z3A" firstAttribute="leading" secondItem="6hC-3g-fO0" secondAttribute="leading" id="ae5-VJ-clP"/>
                             <constraint firstItem="85q-SU-9w9" firstAttribute="centerX" secondItem="6hC-3g-fO0" secondAttribute="centerX" id="jaw-as-rTg"/>
                             <constraint firstItem="6hC-3g-fO0" firstAttribute="trailing" secondItem="n9h-EW-g1f" secondAttribute="trailing" constant="20" id="m3s-oI-7lt"/>
@@ -444,7 +470,7 @@ d'humains reponsables</string>
                                                 <state key="normal" image="picto_localize"/>
                                             </button>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h72-xa-cJu">
-                                                <rect key="frame" x="50" y="0.0" width="265" height="50"/>
+                                                <rect key="frame" x="60" y="0.0" width="255" height="50"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -463,10 +489,9 @@ d'humains reponsables</string>
                                         </subviews>
                                         <color key="backgroundColor" red="0.3903887868" green="0.85008233789999998" blue="0.61957800389999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
-                                            <constraint firstItem="h72-xa-cJu" firstAttribute="leading" secondItem="eRl-EH-w5Y" secondAttribute="trailing" id="0cl-c2-w32"/>
-                                            <constraint firstItem="xIx-28-uIY" firstAttribute="leading" secondItem="h72-xa-cJu" secondAttribute="leading" id="8FH-f0-9TZ"/>
                                             <constraint firstAttribute="bottom" secondItem="h72-xa-cJu" secondAttribute="bottom" id="AxM-Le-7v7"/>
                                             <constraint firstItem="h72-xa-cJu" firstAttribute="top" secondItem="BKi-hI-0fh" secondAttribute="top" id="BkO-kA-vCZ"/>
+                                            <constraint firstItem="h72-xa-cJu" firstAttribute="leading" secondItem="xIx-28-uIY" secondAttribute="leading" constant="10" id="Fny-bA-wOv"/>
                                             <constraint firstItem="eRl-EH-w5Y" firstAttribute="leading" secondItem="BKi-hI-0fh" secondAttribute="leading" id="Jlv-Eq-q71"/>
                                             <constraint firstAttribute="trailing" secondItem="xIx-28-uIY" secondAttribute="trailing" id="Me3-WP-1Ir"/>
                                             <constraint firstAttribute="bottom" secondItem="xIx-28-uIY" secondAttribute="bottom" id="Pai-hy-xko"/>
@@ -474,6 +499,7 @@ d'humains reponsables</string>
                                             <constraint firstAttribute="trailing" secondItem="h72-xa-cJu" secondAttribute="trailing" id="XBN-Ag-W1l"/>
                                             <constraint firstItem="xIx-28-uIY" firstAttribute="top" secondItem="BKi-hI-0fh" secondAttribute="top" id="ZsG-Bh-nWp"/>
                                             <constraint firstAttribute="bottom" secondItem="hW3-8i-2F4" secondAttribute="bottom" constant="10" id="e98-ol-R2h"/>
+                                            <constraint firstItem="xIx-28-uIY" firstAttribute="leading" secondItem="eRl-EH-w5Y" secondAttribute="trailing" id="fpz-TZ-Gkr"/>
                                             <constraint firstAttribute="height" constant="50" id="hno-gt-w6I"/>
                                             <constraint firstAttribute="bottom" secondItem="eRl-EH-w5Y" secondAttribute="bottom" id="jZ5-tr-1QO"/>
                                             <constraint firstItem="hW3-8i-2F4" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="BKi-hI-0fh" secondAttribute="leading" constant="20" symbolic="YES" id="pxR-1h-taV"/>

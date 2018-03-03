@@ -20,6 +20,7 @@ class MenuViewController: UIViewController {
 
     // IBOutlet
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet var tableHeaderView: MenuHeaderView!
     
     // Data
     let tabsMenu: [MenuType] = [.profil, .favorites, .notifications, .settings, .loggout]
@@ -27,7 +28,9 @@ class MenuViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .red
+        let userImage = UIImage(named: "profile_banner")
+        tableHeaderView.configure(with: userImage!)
+        tableView.tableHeaderView = tableHeaderView
     }
 }
 

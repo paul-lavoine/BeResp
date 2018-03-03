@@ -28,7 +28,7 @@ class LoginViewController: UIViewController {
         
         let mainViewController = MainViewController()
         mainViewController.rootViewController = navigationController
-        mainViewController.setup(type: 1)
+        mainViewController.setup(type: 0)
         
         let window = UIApplication.shared.delegate!.window!!
         window.rootViewController = mainViewController
