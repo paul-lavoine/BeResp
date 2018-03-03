@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ProfileViewController: UIViewController {
+class ProfileViewController: UIViewController, UIGestureRecognizerDelegate {
     
     @IBOutlet weak var searchContainerView: UIView!
     
@@ -39,18 +39,19 @@ class ProfileViewController: UIViewController {
     }
     
     @IBAction func searchAction(_ sender: Any) {
-        
+        print("COUCCOU")
     }
-    
+
     @IBAction func commercesAction(_ sender: Any) {
+       print("COUCCOU 1")
         self.navigationController?.pushViewController(StoryboardManager.shopsViewController(), animated: true)
     }
     
     @IBAction func calendarAction(_ sender: Any) {
-        
+        print("COUCCOU 2 ")
     }
     
     @IBAction func organisationsAction(_ sender: Any) {
-        
+        print("COUCCOU 3")
     }
 }

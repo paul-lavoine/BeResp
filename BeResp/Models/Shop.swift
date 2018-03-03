@@ -8,6 +8,43 @@
 
 import UIKit
 
-class Shop {
+enum ShopCategory: String {
+    case bio = "Supermarché bio"
+    case marche = "Marché"
+    case epicerie = "Épicerie fine et art de la table"
+}
+
+enum ShopPrice {
+    case cheap
+    case medium
+    case expensive
+}
+
+class Shop: NSObject {
+    // MARK: - Properties
+    var uid: String?
+    var title: String!
+    var latitude: Double?
+    var longitude: Double?
+    var category: ShopCategory!
+    var image: UIImage!
+    var openningTime: String!
+    var information: String!
+    var price: ShopPrice!
+    var rate: Double!
+    var comments: [String] = []
+    var commentsCount: Int!
     
+    init(with title:String, category: ShopCategory, image: String, openningTime: String, information: String, price: ShopPrice, rate: Double, commentsCount: Int) {
+        super.init()
+        
+        self.title = title
+        self.category = category
+        self.image = UIImage(named: image)
+        self.openningTime = openningTime
+        self.information = information
+        self.price = price
+        self.rate = rate
+        self.commentsCount = commentsCount
+    }
 }
