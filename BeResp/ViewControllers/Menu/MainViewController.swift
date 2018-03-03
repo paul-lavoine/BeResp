@@ -25,7 +25,11 @@ class MainViewController: LGSideMenuController {
             // LGSideMenuController fully customizable from storyboard
         }
         else {
-            leftViewController = MenuViewController()
+            guard let menuViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MenuViewController") as? MenuViewController else {
+                fatalError("Cannot instantiate view controller MenuViewController reuseIdentifier from storyboard")
+            }
+            
+            leftViewController = menuViewController
             
             leftViewWidth = 250.0;
             leftViewBackgroundImage = UIImage(named: "imageLeft")

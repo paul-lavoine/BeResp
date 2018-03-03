@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A17FDE4204589E7008418C6 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A17FDE3204589E7008418C6 /* MenuCell.swift */; };
 		3A19D00A2044349900FC1ADB /* HomeDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A19D0092044349900FC1ADB /* HomeDescriptionViewController.swift */; };
 		3A3AB09E20417AF100A94EE8 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3AB09D20417AF100A94EE8 /* MenuViewController.swift */; };
 		3A3AB0A120417CB900A94EE8 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3AB0A020417CB800A94EE8 /* NavigationController.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A17FDE3204589E7008418C6 /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		3A19D0092044349900FC1ADB /* HomeDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDescriptionViewController.swift; sourceTree = "<group>"; };
 		3A3AB09D20417AF100A94EE8 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		3A3AB0A020417CB800A94EE8 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 				3A3AB0A220417D1F00A94EE8 /* MainViewController.swift */,
 				3A3AB09D20417AF100A94EE8 /* MenuViewController.swift */,
 				3A3AB0A020417CB800A94EE8 /* NavigationController.swift */,
+				3A17FDE3204589E7008418C6 /* MenuCell.swift */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -304,6 +307,7 @@
 			files = (
 				3AC3D01620416AA00086077E /* RootViewController.swift in Sources */,
 				3AC3D01420416A0B0086077E /* ShopsViewController.swift in Sources */,
+				3A17FDE4204589E7008418C6 /* MenuCell.swift in Sources */,
 				3A5945092041745800BE94AD /* HomePagerViewController.swift in Sources */,
 				3AC3D012204169EC0086077E /* ProfileViewController.swift in Sources */,
 				3A3AB0A120417CB900A94EE8 /* NavigationController.swift in Sources */,
