@@ -32,6 +32,14 @@ class ShopCell: UITableViewCell {
     @IBOutlet weak var ratingRoundedView: UIView!
     @IBOutlet weak var ratingLabel: UILabel!
     
+    @IBOutlet weak var firstStarImageView: UIImageView!
+    @IBOutlet weak var secondStarImageView: UIImageView!
+    @IBOutlet weak var thirdStarImageView: UIImageView!
+    @IBOutlet weak var forthStarImageView: UIImageView!
+    @IBOutlet weak var fifthStarImageView: UIImageView!
+    
+    @IBOutlet weak var commentCountLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -40,10 +48,10 @@ class ShopCell: UITableViewCell {
         informationRoundedContainerView.layer.cornerRadius = 15.0
         ratingRoundedView.layer.cornerRadius = 8.0
         
-        let shadowPath = UIBezierPath(rect: contentView.bounds)
         contentView.layer.shadowRadius = 10.0;
         contentView.layer.shadowOpacity = 0.25;
         contentView.layer.shadowOffset = CGSize(width: 3.0, height: 3.0)
+//        let shadowPath = UIBezierPath(rect: contentView.bounds)
 //        contentView.layer.shadowPath = shadowPath.cgPath C'est supposé amélioré les performances
  
         let ratingShadowPath = UIBezierPath(rect: ratingRoundedView.bounds)
@@ -65,8 +73,19 @@ class ShopCell: UITableViewCell {
         shopTitleLabel.text = shop.title
         shopCategoryLabel.text = shop.category.rawValue
         openningTimeLabel.text = shop.openningTime
-        priceTypeLabel.text = "€€"
         shopImageView.image = shop.image
         ratingLabel.text = String(shop.rate)
+        
+        let color = UIColor(red: 25.0/255.0, green: 222.0/255.0, blue: 163.0/255.0, alpha: 1.0)
+        let attribute = NSMutableAttributedString.init(string: "€€€")
+        attribute.addAttribute(NSAttributedStringKey.foregroundColor, value: color, range: NSRange.init(location: 0, length: shop.price.rawValue) )
+        priceTypeLabel.attributedText = attribute
+        
+        commentCountLabel.text = "(" + String(shop.commentsCount) + ")"
+        
+        var stars: [UIImageView] = [firstStarImageView, secondStarImageView, thirdStarImageView, forthStarImageView, fifthStarImageView]
+        for i in 0...Int(shop.rate.rounded()) - 1 {
+            stars[i].tintColor = color
+        }
     }
 }

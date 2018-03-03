@@ -9,15 +9,15 @@
 import UIKit
 
 enum ShopCategory: String {
-    case bio = "Supermarché bio"
-    case marche = "Marché"
-    case epicerie = "Épicerie fine et art de la table"
+    case bio        = "Supermarché bio"
+    case marche     = "Marché"
+    case epicerie   = "Épicerie fine et art de la table"
 }
 
-enum ShopPrice {
-    case cheap
-    case medium
-    case expensive
+enum ShopPrice: Int {
+    case cheap      = 1
+    case medium     = 2
+    case expensive  = 3
 }
 
 class Shop: NSObject {
