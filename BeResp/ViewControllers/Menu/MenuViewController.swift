@@ -48,6 +48,7 @@ extension MenuViewController: UITableViewDelegate {
         case .settings:
             break
         case .loggout:
+            self.navigationController?.popToRootViewController(animated: true)
         break
         }
         

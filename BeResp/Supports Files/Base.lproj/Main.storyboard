@@ -314,13 +314,13 @@ d'humains reponsables</string>
                                     <action selector="connectUser:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AKR-AF-w3e"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DQx-Uc-6R4">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="johndoe@gmail.com" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DQx-Uc-6R4">
                                 <rect key="frame" x="20" y="316" width="335" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qLX-oB-FDY">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="********" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qLX-oB-FDY">
                                 <rect key="frame" x="20" y="402" width="335" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -559,14 +559,14 @@ d'humains reponsables</string>
                                             <constraint firstItem="uGh-G0-YeE" firstAttribute="width" secondItem="ekL-aK-LgV" secondAttribute="width" id="scA-J2-ULB"/>
                                         </constraints>
                                     </stackView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ROF-C5-qf8">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="À PROXIMITÉ DE VOUS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ROF-C5-qf8">
                                         <rect key="frame" x="20" y="244.5" width="335" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zUe-wL-02h">
-                                        <rect key="frame" x="20" y="285" width="335" height="119.5"/>
+                                        <rect key="frame" x="20" y="284.5" width="335" height="120"/>
                                         <color key="backgroundColor" red="0.68199443820000005" green="0.6355014443" blue="0.62352788449999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </view>
                                 </subviews>
@@ -607,8 +607,41 @@ d'humains reponsables</string>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zxe-E4-mBi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="cJp-P2-UQM" userLabel="Commerces">
+                    <connections>
+                        <action selector="commercesAction:" destination="aKW-S0-trx" id="iyP-SF-1Oa"/>
+                        <outlet property="delegate" destination="ekL-aK-LgV" id="pR9-t9-mGn"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="x8k-6V-K2s" userLabel="Calendar">
+                    <connections>
+                        <action selector="calendarAction:" destination="aKW-S0-trx" id="2Od-k9-RyG"/>
+                        <outlet property="delegate" destination="V10-f3-OR5" id="Gz5-Gg-jsk"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="XdV-Xm-FNC" userLabel="Organisations">
+                    <connections>
+                        <action selector="organisationsAction:" destination="aKW-S0-trx" id="LuF-kh-eHz"/>
+                        <outlet property="delegate" destination="uGh-G0-YeE" id="NXd-nf-l1b"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="856.79999999999995" y="124.58770614692655"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="a3Q-cd-fSi">
+            <objects>
+                <viewController id="jS1-Rb-jIP" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GYm-yo-8tW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Kaa-1P-Q7U"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4i1-iJ-lfO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1628" y="125"/>
         </scene>
         <!--Favorites View Controller-->
         <scene sceneID="XFG-wM-wQb">
@@ -652,7 +685,7 @@ d'humains reponsables</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uJ0-qJ-2wo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1764" y="103"/>
+            <point key="canvasLocation" x="1598" y="-575"/>
         </scene>
     </scenes>
     <resources>

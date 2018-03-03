@@ -14,17 +14,20 @@ class ProfileViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         configureUI()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.isHidden = true
+    }
+    
     override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
         self.navigationController?.navigationBar.isHidden = false
     }
     
     func configureUI() {
-        self.navigationController?.navigationBar.isHidden = true
-        
         searchContainerView.layer.cornerRadius = 5.0
         let shadowPath = UIBezierPath(rect: searchContainerView.bounds)
         searchContainerView.layer.masksToBounds = false
@@ -36,5 +39,18 @@ class ProfileViewController: UIViewController {
     }
     
     @IBAction func searchAction(_ sender: Any) {
+        
+    }
+    
+    @IBAction func commercesAction(_ sender: Any) {
+        self.navigationController?.pushViewController(StoryboardManager.shopsViewController(), animated: true)
+    }
+    
+    @IBAction func calendarAction(_ sender: Any) {
+        
+    }
+    
+    @IBAction func organisationsAction(_ sender: Any) {
+        
     }
 }

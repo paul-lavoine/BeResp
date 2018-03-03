@@ -64,6 +64,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A09D504204AC467009D387F /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				3A09D4FE204AAD70009D387F /* FavoritesCell.swift */,
+				3A09D4FA204AAD12009D387F /* FavoritesViewController.swift */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		3A09D505204AC47A009D387F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				3A09D502204AAE72009D387F /* StoryboardManager.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		3A19D0082044348500FC1ADB /* HomePage */ = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				3AC3CFFF204164D90086077E /* AppDelegate.swift */,
+				3A09D505204AC47A009D387F /* Utils */,
 				3AC3D01C20416F140086077E /* Views */,
 				3AC3D01B20416CDB0086077E /* ViewControllers */,
 				3AC3D01A20416CD40086077E /* Supports Files */,
@@ -135,15 +153,13 @@
 		3AC3D01B20416CDB0086077E /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				3A09D504204AC467009D387F /* Favorites */,
 				3A19D00B2044360700FC1ADB /* Model */,
 				3A19D0082044348500FC1ADB /* HomePage */,
 				3A3AB09F20417CA600A94EE8 /* Menu */,
 				3AC3D001204164D90086077E /* LoginViewController.swift */,
 				3AC3D011204169EC0086077E /* ProfileViewController.swift */,
 				3AC3D01320416A0B0086077E /* ShopsViewController.swift */,
-				3A09D4FA204AAD12009D387F /* FavoritesViewController.swift */,
-				3A09D4FE204AAD70009D387F /* FavoritesCell.swift */,
-				3A09D502204AAE72009D387F /* StoryboardManager.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";

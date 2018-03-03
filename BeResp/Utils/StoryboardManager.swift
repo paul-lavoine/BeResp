@@ -35,5 +35,14 @@ class StoryboardManager: NSObject {
         
         return favoritesViewController
     }
+    
+    
+    static func shopsViewController() -> UIViewController {
+        guard let shopsViewController = StoryboardManager.main().instantiateViewController(withIdentifier: "ShopsViewController") as? ShopsViewController else {
+            fatalError("Cannot instantiate view controller ShopsViewController from storyboard")
+        }
+        
+        return shopsViewController
+    }
 }
 
