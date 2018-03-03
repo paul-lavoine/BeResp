@@ -56,6 +56,12 @@ class ShopCell: UITableViewCell {
         ratingContainerView.layer.shadowPath = ratingShadowPath.cgPath*/
     }
     
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        contentView.frame = UIEdgeInsetsInsetRect(contentView.frame, UIEdgeInsetsMake(ShopsViewController.cellSpacing, 0, ShopsViewController.cellSpacing, 0))
+    }
+    
     func configure(with shop: Shop) {
         shopTitleLabel.text = shop.title
         shopCategoryLabel.text = shop.category.rawValue

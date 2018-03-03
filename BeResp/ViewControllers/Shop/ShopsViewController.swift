@@ -10,6 +10,8 @@ import UIKit
 
 class ShopsViewController: UIViewController {
     
+    static let cellSpacing: CGFloat = 20.0
+    
     // IBOutlets
     @IBOutlet weak var tableView: UITableView!
     
@@ -19,9 +21,9 @@ class ShopsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let width = 2*self.tableView.frame.width/5
-        tableView.estimatedRowHeight = width
-        tableView.rowHeight = width
+        let height = 2*self.tableView.frame.width/5 + ShopsViewController.cellSpacing * 2
+        tableView.estimatedRowHeight = height
+        tableView.rowHeight = height
         tableView.register(ShopCellConstant.nib, forCellReuseIdentifier: ShopCellConstant.reuseIdentifier)
     }
 }
