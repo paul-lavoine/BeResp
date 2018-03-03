@@ -63,9 +63,9 @@ class ShopCell: UITableViewCell {
         let ratingShadowPath = UIBezierPath(rect: ratingRoundedView.bounds)
         ratingRoundedView.layer.masksToBounds = false
         ratingRoundedView.layer.shadowColor = UIColor.black.cgColor
-        ratingRoundedView.layer.shadowOffset = CGSize(width: 3.0, height: 3.0)
-        ratingRoundedView.layer.shadowRadius = 10.0
-        ratingRoundedView.layer.shadowOpacity = 0.5
+        ratingRoundedView.layer.shadowOffset = CGSize(width: 0.0, height: 10.0)
+        ratingRoundedView.layer.shadowRadius = 6.0
+        ratingRoundedView.layer.shadowOpacity = 0.3
         ratingRoundedView.layer.shadowPath = ratingShadowPath.cgPath
     }
     
