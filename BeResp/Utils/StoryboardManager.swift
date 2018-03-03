@@ -44,5 +44,14 @@ class StoryboardManager: NSObject {
         
         return shopsViewController
     }
+    
+    
+    static func shopDetailViewController(shop: Shop) -> UIViewController {
+        guard let shopDetailViewController = StoryboardManager.main().instantiateViewController(withIdentifier: "ShopDetailViewController") as? ShopDetailViewController else {
+            fatalError("Cannot instantiate view controller ShopDetailViewController from storyboard")
+        }
+        shopDetailViewController.configure(with: shop)
+        return shopsViewController
+    }
 }
 
