@@ -673,30 +673,51 @@ d'humains reponsables</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cdK-Jy-7G3">
-                                <rect key="frame" x="10" y="80" width="355" height="587"/>
+                                <rect key="frame" x="10" y="64" width="355" height="603"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <outlet property="dataSource" destination="jS1-Rb-jIP" id="3oc-wP-iqX"/>
                                     <outlet property="delegate" destination="jS1-Rb-jIP" id="NVW-mf-mUE"/>
                                 </connections>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h8i-Qm-fRc">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Antibes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pla-qc-tnr">
+                                        <rect key="frame" x="158.5" y="21.5" width="58.5" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="765-H5-42b"/>
+                                    <constraint firstItem="Pla-qc-tnr" firstAttribute="centerY" secondItem="h8i-Qm-fRc" secondAttribute="centerY" id="bgU-R0-35h"/>
+                                    <constraint firstItem="Pla-qc-tnr" firstAttribute="centerX" secondItem="h8i-Qm-fRc" secondAttribute="centerX" id="xnC-tQ-m3h"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.98028594255447388" green="0.98045331239700317" blue="0.98027533292770386" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Kaa-1P-Q7U" firstAttribute="bottom" secondItem="cdK-Jy-7G3" secondAttribute="bottom" id="49x-h2-yU5"/>
                             <constraint firstItem="Kaa-1P-Q7U" firstAttribute="trailing" secondItem="cdK-Jy-7G3" secondAttribute="trailing" constant="10" id="5fr-Tc-mVb"/>
-                            <constraint firstItem="cdK-Jy-7G3" firstAttribute="top" secondItem="Kaa-1P-Q7U" secondAttribute="top" constant="60" id="7zk-tn-don"/>
                             <constraint firstItem="cdK-Jy-7G3" firstAttribute="leading" secondItem="Kaa-1P-Q7U" secondAttribute="leading" constant="10" id="NhI-DI-UDY"/>
+                            <constraint firstItem="Kaa-1P-Q7U" firstAttribute="trailing" secondItem="h8i-Qm-fRc" secondAttribute="trailing" id="OkQ-dI-CUs"/>
+                            <constraint firstItem="cdK-Jy-7G3" firstAttribute="top" secondItem="h8i-Qm-fRc" secondAttribute="bottom" id="fne-GK-oKy"/>
+                            <constraint firstItem="h8i-Qm-fRc" firstAttribute="top" secondItem="GYm-yo-8tW" secondAttribute="top" id="ohd-Os-7Bh"/>
+                            <constraint firstItem="h8i-Qm-fRc" firstAttribute="leading" secondItem="Kaa-1P-Q7U" secondAttribute="leading" id="y7a-Es-Noh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Kaa-1P-Q7U"/>
                     </view>
+                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="tableView" destination="cdK-Jy-7G3" id="bmY-t9-Vk9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4i1-iJ-lfO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1628" y="125"/>
+            <point key="canvasLocation" x="1628" y="124.58770614692655"/>
         </scene>
         <!--Favorites View Controller-->
         <scene sceneID="XFG-wM-wQb">

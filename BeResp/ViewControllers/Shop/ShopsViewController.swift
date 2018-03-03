@@ -21,6 +21,7 @@ class ShopsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         let height = 2*self.tableView.frame.width/5 + ShopsViewController.cellSpacing * 2
         tableView.estimatedRowHeight = height
         tableView.rowHeight = height

@@ -17,17 +17,9 @@ class ProfileViewController: UIViewController, UIGestureRecognizerDelegate {
         configureUI()
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        self.navigationController?.navigationBar.isHidden = true
-    }
-    
-    override func viewDidDisappear(_ animated: Bool) {
-        super.viewDidDisappear(animated)
-        self.navigationController?.navigationBar.isHidden = false
-    }
-    
     func configureUI() {
+        self.navigationController?.navigationBar.isHidden = true
+        
         searchContainerView.layer.cornerRadius = 5.0
         let shadowPath = UIBezierPath(rect: searchContainerView.bounds)
         searchContainerView.layer.masksToBounds = false
