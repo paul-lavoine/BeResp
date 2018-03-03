@@ -34,9 +34,8 @@ class ShopCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        shopImageView.layer.cornerRadius = 8.0
-        containerView.layer.cornerRadius = 8.0
-        informationRoundedContainerView.layer.cornerRadius = 8.0
+        shopImageView.layer.cornerRadius = 5.0
+        informationRoundedContainerView.layer.cornerRadius = 15.0
         ratingRoundedView.layer.cornerRadius = 8.0
         
       /*  let shadowPath = UIBezierPath(rect: containerView.bounds)
