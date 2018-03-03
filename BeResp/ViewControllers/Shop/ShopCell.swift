@@ -38,14 +38,11 @@ class ShopCell: UITableViewCell {
         informationRoundedContainerView.layer.cornerRadius = 15.0
         ratingRoundedView.layer.cornerRadius = 8.0
         
-       /* let shadowPath = UIBezierPath(rect: contentView.bounds)
-        contentView.layer.masksToBounds = false
-        contentView.layer.shadowColor = UIColor.black.cgColor
-        contentView.layer.shadowOffset = CGSize(width: 10.0, height: 10.0)
-        contentView.layer.shadowRadius = 10.0
-        contentView.layer.shadowOpacity = 0.5
-        contentView.layer.shadowPath = shadowPath.cgPath*/
- 
+        let shadowPath = UIBezierPath(rect: contentView.bounds)
+        contentView.layer.shadowRadius = 10.0;
+        contentView.layer.shadowOpacity = 0.25;
+        contentView.layer.shadowOffset = CGSize(width: 3.0, height: 3.0)
+//        contentView.layer.shadowPath = shadowPath.cgPath C'est supposé amélioré les performances
  
         let ratingShadowPath = UIBezierPath(rect: ratingRoundedView.bounds)
         ratingRoundedView.layer.masksToBounds = false
