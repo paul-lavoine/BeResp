@@ -70,6 +70,7 @@ class ShopCell: UITableViewCell {
         openningTimeLabel.text = shop.openningTime
         shopImageView.image = shop.image
         flagBadgeView.configure(with: String(shop.rate))
+        flagBadgeView.addShadow()
         
         let color = UIColor(red: 25.0/255.0, green: 222.0/255.0, blue: 163.0/255.0, alpha: 1.0)
         let attribute = NSMutableAttributedString.init(string: "€€€")

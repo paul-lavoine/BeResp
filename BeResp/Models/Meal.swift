@@ -14,9 +14,9 @@ class Meal: NSObject {
     var title: String!
     var ingredients: String!
     var image: UIImage!
-    var price: String!
+    var price: Double!
     
-    init(with title:String, ingredients: String, image: String, price: String) {
+    init(with title:String, ingredients: String, image: String, price: Double) {
         super.init()
         
         self.title = title

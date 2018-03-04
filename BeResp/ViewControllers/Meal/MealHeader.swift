@@ -13,6 +13,6 @@ class MealHeader: UIView {
     @IBOutlet weak var titleLabel: UILabel!
     
     func configure(with title: String) {
-        titleLabel.text = title
+        titleLabel.text = "CARTE - MENU"
     }
 }

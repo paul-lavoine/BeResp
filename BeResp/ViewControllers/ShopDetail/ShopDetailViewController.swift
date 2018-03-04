@@ -62,6 +62,7 @@ class ShopDetailViewController: UIViewController {
         subtitleLabel.text = shop?.category.rawValue
         descriptionLabel.text = shop?.information
         flagBadgeView.configure(with: String(format:"%.1f", (shop?.rate)!))
+        flagBadgeView.addShadow()
         openningTimeLabel.text = shop?.openningTime
         localizationLabel.text = String(format:"%.1f KM", (shop?.distance!)!)
         extraLabel.text = "A EMPORTER"
@@ -80,6 +81,10 @@ class ShopDetailViewController: UIViewController {
     
     @IBAction func showMenu(_ sender: Any) {
         animeTabs(display: .menu)
+        
+        self.navigationController?.present(StoryboardManager.mealViewController(shop: shop!), animated: true, completion: { () -> Void in
+            self.animeTabs(display: .description)
+        })
     }
     
     @IBAction func showComment(_ sender: Any) {

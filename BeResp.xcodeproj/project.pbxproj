@@ -26,6 +26,7 @@
 		3AC3D01920416C2E0086077E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC3D01820416C2E0086077E /* HomeViewController.swift */; };
 		A8A0E606204C35DF00D21DFB /* FlagBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A0E605204C35DF00D21DFB /* FlagBadge.swift */; };
 		A8A0E608204C35EB00D21DFB /* FlagBadge.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8A0E607204C35EB00D21DFB /* FlagBadge.xib */; };
+		A8A0E60A204C411200D21DFB /* UIView+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A0E609204C411200D21DFB /* UIView+Tools.swift */; };
 		A8C7A0A1204AF61700A41288 /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C7A0A0204AF61700A41288 /* Shop.swift */; };
 		A8C7A0A3204AF76600A41288 /* MenuHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C7A0A2204AF76600A41288 /* MenuHeaderView.swift */; };
 		A8C7A0A6204B029E00A41288 /* ShopsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C7A0A5204B029E00A41288 /* ShopsController.swift */; };
@@ -64,6 +65,7 @@
 		8A286CC28B32855F9CFA279A /* Pods-BeResp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeResp.release.xcconfig"; path = "Pods/Target Support Files/Pods-BeResp/Pods-BeResp.release.xcconfig"; sourceTree = "<group>"; };
 		A8A0E605204C35DF00D21DFB /* FlagBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagBadge.swift; sourceTree = "<group>"; };
 		A8A0E607204C35EB00D21DFB /* FlagBadge.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlagBadge.xib; sourceTree = "<group>"; };
+		A8A0E609204C411200D21DFB /* UIView+Tools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Tools.swift"; sourceTree = "<group>"; };
 		A8C7A0A0204AF61700A41288 /* Shop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shop.swift; sourceTree = "<group>"; };
 		A8C7A0A2204AF76600A41288 /* MenuHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuHeaderView.swift; sourceTree = "<group>"; };
 		A8C7A0A5204B029E00A41288 /* ShopsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopsController.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				3A09D502204AAE72009D387F /* StoryboardManager.swift */,
+				A8A0E609204C411200D21DFB /* UIView+Tools.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -235,8 +238,8 @@
 		A8C7A0A4204B028F00A41288 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				A8C7A0A5204B029E00A41288 /* ShopsController.swift */,
 				A8C7A0B8204C1B4100A41288 /* MealsController.swift */,
+				A8C7A0A5204B029E00A41288 /* ShopsController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -430,6 +433,7 @@
 				3A5945092041745800BE94AD /* HomePagerViewController.swift in Sources */,
 				A8C7A0AB204B0B9700A41288 /* ShopCell.swift in Sources */,
 				A8C7A0BF204C33BB00A41288 /* MealHeader.swift in Sources */,
+				A8A0E60A204C411200D21DFB /* UIView+Tools.swift in Sources */,
 				A8C7A0A6204B029E00A41288 /* ShopsController.swift in Sources */,
 				3AC3D012204169EC0086077E /* ProfileViewController.swift in Sources */,
 				3A3AB0A120417CB900A94EE8 /* NavigationController.swift in Sources */,

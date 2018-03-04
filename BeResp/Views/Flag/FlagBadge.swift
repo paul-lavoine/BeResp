@@ -43,7 +43,14 @@ class FlagBadge: UIView {
         super.awakeFromNib()
         
         ratingRoundedView.layer.cornerRadius = 8.0
-        
+    }
+    
+    func configure(with text: String, font: UIFont = UIFont.boldSystemFont(ofSize: 13.0)) {
+        ratingLabel.text = text
+        ratingLabel.font = font
+    }
+    
+    func addShadow() {
         let ratingShadowPath = UIBezierPath(rect: ratingRoundedView.bounds)
         ratingRoundedView.layer.masksToBounds = false
         ratingRoundedView.layer.shadowColor = UIColor.black.cgColor
@@ -53,8 +60,14 @@ class FlagBadge: UIView {
         ratingRoundedView.layer.shadowPath = ratingShadowPath.cgPath
     }
     
-    func configure(with text: String) {
-        ratingLabel.text = text
+    func addMealShadow() {
+        let ratingShadowPath = UIBezierPath(rect: ratingRoundedView.bounds)
+        ratingRoundedView.layer.masksToBounds = false
+        ratingRoundedView.layer.shadowColor = UIColor.black.cgColor
+        ratingRoundedView.layer.shadowOffset = CGSize(width: 0.0, height: 0.1)
+        ratingRoundedView.layer.shadowRadius = 6.0
+        ratingRoundedView.layer.shadowOpacity = 0.3
+        ratingRoundedView.layer.shadowPath = ratingShadowPath.cgPath
     }
     
 }

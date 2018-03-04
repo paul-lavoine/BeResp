@@ -24,6 +24,10 @@ class MealViewController: UIViewController {
         
         titleLabel.text = shop?.title
         
+        tableView.estimatedRowHeight = 160.0
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.register(MealCellConstant.nib, forCellReuseIdentifier: MealCellConstant.reuseIdentifier)
+        
         mealHeader.configure(with: (shop?.title)!)
         self.tableView.tableHeaderView = mealHeader
     }
@@ -33,7 +37,7 @@ class MealViewController: UIViewController {
     }
     
     @IBAction func dismissAction(_ sender: Any) {
-        self.navigationController?.popViewController(animated: true)
+        self.dismiss(animated: true, completion: nil)
     }
 }
 
@@ -43,10 +47,15 @@ extension MealViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "MealCell", for: indexPath) as? MealCell else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: MealCellConstant.reuseIdentifier, for: indexPath) as? MealCell else {
             fatalError("Error Meal Cell")
         }
         
+        guard let meal = meals[indexPath.row]  as? Meal else {
+            return cell
+        }
+        
+        cell.configure(with: meal)
         return cell
     }
     
