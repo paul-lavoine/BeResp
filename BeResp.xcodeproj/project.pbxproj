@@ -24,6 +24,8 @@
 		3AC3D012204169EC0086077E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC3D011204169EC0086077E /* ProfileViewController.swift */; };
 		3AC3D01420416A0B0086077E /* ShopsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC3D01320416A0B0086077E /* ShopsViewController.swift */; };
 		3AC3D01920416C2E0086077E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC3D01820416C2E0086077E /* HomeViewController.swift */; };
+		A8A0E606204C35DF00D21DFB /* FlagBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A0E605204C35DF00D21DFB /* FlagBadge.swift */; };
+		A8A0E608204C35EB00D21DFB /* FlagBadge.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8A0E607204C35EB00D21DFB /* FlagBadge.xib */; };
 		A8C7A0A1204AF61700A41288 /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C7A0A0204AF61700A41288 /* Shop.swift */; };
 		A8C7A0A3204AF76600A41288 /* MenuHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C7A0A2204AF76600A41288 /* MenuHeaderView.swift */; };
 		A8C7A0A6204B029E00A41288 /* ShopsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C7A0A5204B029E00A41288 /* ShopsController.swift */; };
@@ -35,6 +37,7 @@
 		A8C7A0B9204C1B4100A41288 /* MealsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C7A0B8204C1B4100A41288 /* MealsController.swift */; };
 		A8C7A0BB204C1BBA00A41288 /* MealCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C7A0BA204C1BBA00A41288 /* MealCell.swift */; };
 		A8C7A0BD204C1BFA00A41288 /* MealCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8C7A0BC204C1BFA00A41288 /* MealCell.xib */; };
+		A8C7A0BF204C33BB00A41288 /* MealHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C7A0BE204C33BB00A41288 /* MealHeader.swift */; };
 		A97A1A713A6EA15683A3126A /* Pods_BeResp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8C6B1761C371597D2225F74 /* Pods_BeResp.framework */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +62,8 @@
 		3AC3D01320416A0B0086077E /* ShopsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopsViewController.swift; sourceTree = "<group>"; };
 		3AC3D01820416C2E0086077E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		8A286CC28B32855F9CFA279A /* Pods-BeResp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeResp.release.xcconfig"; path = "Pods/Target Support Files/Pods-BeResp/Pods-BeResp.release.xcconfig"; sourceTree = "<group>"; };
+		A8A0E605204C35DF00D21DFB /* FlagBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagBadge.swift; sourceTree = "<group>"; };
+		A8A0E607204C35EB00D21DFB /* FlagBadge.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlagBadge.xib; sourceTree = "<group>"; };
 		A8C7A0A0204AF61700A41288 /* Shop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shop.swift; sourceTree = "<group>"; };
 		A8C7A0A2204AF76600A41288 /* MenuHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuHeaderView.swift; sourceTree = "<group>"; };
 		A8C7A0A5204B029E00A41288 /* ShopsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopsController.swift; sourceTree = "<group>"; };
@@ -70,6 +75,7 @@
 		A8C7A0B8204C1B4100A41288 /* MealsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsController.swift; sourceTree = "<group>"; };
 		A8C7A0BA204C1BBA00A41288 /* MealCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealCell.swift; sourceTree = "<group>"; };
 		A8C7A0BC204C1BFA00A41288 /* MealCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MealCell.xib; sourceTree = "<group>"; };
+		A8C7A0BE204C33BB00A41288 /* MealHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealHeader.swift; sourceTree = "<group>"; };
 		D8C6B1761C371597D2225F74 /* Pods_BeResp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeResp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E616BC2E983FB55310C51FC2 /* Pods-BeResp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeResp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BeResp/Pods-BeResp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -150,6 +156,7 @@
 				A8C7A0A4204B028F00A41288 /* Controller */,
 				A8C7A09F204AF60500A41288 /* Models */,
 				3A09D505204AC47A009D387F /* Utils */,
+				A8A0E603204C35BF00D21DFB /* Views */,
 				3AC3D01B20416CDB0086077E /* ViewControllers */,
 				3AC3D01A20416CD40086077E /* Supports Files */,
 			);
@@ -199,6 +206,23 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		A8A0E603204C35BF00D21DFB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A8A0E604204C35C800D21DFB /* Flag */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A8A0E604204C35C800D21DFB /* Flag */ = {
+			isa = PBXGroup;
+			children = (
+				A8A0E605204C35DF00D21DFB /* FlagBadge.swift */,
+				A8A0E607204C35EB00D21DFB /* FlagBadge.xib */,
+			);
+			path = Flag;
+			sourceTree = "<group>";
+		};
 		A8C7A09F204AF60500A41288 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -233,6 +257,7 @@
 				A8C7A0B6204C1AE800A41288 /* MealViewController.swift */,
 				A8C7A0BA204C1BBA00A41288 /* MealCell.swift */,
 				A8C7A0BC204C1BFA00A41288 /* MealCell.xib */,
+				A8C7A0BE204C33BB00A41288 /* MealHeader.swift */,
 			);
 			path = Meal;
 			sourceTree = "<group>";
@@ -327,6 +352,7 @@
 				3AC3D007204164D90086077E /* Assets.xcassets in Resources */,
 				A8C7A0BD204C1BFA00A41288 /* MealCell.xib in Resources */,
 				3AC3D005204164D90086077E /* Main.storyboard in Resources */,
+				A8A0E608204C35EB00D21DFB /* FlagBadge.xib in Resources */,
 				A8C7A0AD204B10E600A41288 /* ShopCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -403,6 +429,7 @@
 				3A17FDE4204589E7008418C6 /* MenuCell.swift in Sources */,
 				3A5945092041745800BE94AD /* HomePagerViewController.swift in Sources */,
 				A8C7A0AB204B0B9700A41288 /* ShopCell.swift in Sources */,
+				A8C7A0BF204C33BB00A41288 /* MealHeader.swift in Sources */,
 				A8C7A0A6204B029E00A41288 /* ShopsController.swift in Sources */,
 				3AC3D012204169EC0086077E /* ProfileViewController.swift in Sources */,
 				3A3AB0A120417CB900A94EE8 /* NavigationController.swift in Sources */,
@@ -415,6 +442,7 @@
 				3AC3D000204164D90086077E /* AppDelegate.swift in Sources */,
 				A8C7A0B7204C1AE800A41288 /* MealViewController.swift in Sources */,
 				3AC3D01920416C2E0086077E /* HomeViewController.swift in Sources */,
+				A8A0E606204C35DF00D21DFB /* FlagBadge.swift in Sources */,
 				3A3AB09E20417AF100A94EE8 /* MenuViewController.swift in Sources */,
 				3A3AB0A320417D1F00A94EE8 /* MainViewController.swift in Sources */,
 			);

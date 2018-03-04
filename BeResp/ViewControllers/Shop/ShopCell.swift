@@ -30,9 +30,7 @@ class ShopCell: UITableViewCell {
     
     @IBOutlet weak var priceTypeLabel: UILabel!
     
-    @IBOutlet weak var ratingContainerView: UIView!
-    @IBOutlet weak var ratingRoundedView: UIView!
-    @IBOutlet weak var ratingLabel: UILabel!
+    @IBOutlet weak var flagBadgeView: FlagBadge!
     
     @IBOutlet weak var firstStarImageView: UIImageView!
     @IBOutlet weak var secondStarImageView: UIImageView!
@@ -52,21 +50,12 @@ class ShopCell: UITableViewCell {
         informationRightCornerRoundedView.layer.cornerRadius = 5.0
         shopImageView.layer.cornerRadius = 5.0
         informationRoundedContainerView.layer.cornerRadius = 15.0
-        ratingRoundedView.layer.cornerRadius = 8.0
         
         contentView.layer.shadowRadius = 10.0;
         contentView.layer.shadowOpacity = 0.25;
         contentView.layer.shadowOffset = CGSize(width: 3.0, height: 3.0)
 //        let shadowPath = UIBezierPath(rect: contentView.bounds)
 //        contentView.layer.shadowPath = shadowPath.cgPath C'est supposé amélioré les performances
- 
-        let ratingShadowPath = UIBezierPath(rect: ratingRoundedView.bounds)
-        ratingRoundedView.layer.masksToBounds = false
-        ratingRoundedView.layer.shadowColor = UIColor.black.cgColor
-        ratingRoundedView.layer.shadowOffset = CGSize(width: 0.0, height: 10.0)
-        ratingRoundedView.layer.shadowRadius = 6.0
-        ratingRoundedView.layer.shadowOpacity = 0.3
-        ratingRoundedView.layer.shadowPath = ratingShadowPath.cgPath
     }
     
     override func layoutSubviews() {
@@ -80,7 +69,7 @@ class ShopCell: UITableViewCell {
         shopCategoryLabel.text = shop.category.rawValue
         openningTimeLabel.text = shop.openningTime
         shopImageView.image = shop.image
-        ratingLabel.text = String(shop.rate)
+        flagBadgeView.configure(with: String(shop.rate))
         
         let color = UIColor(red: 25.0/255.0, green: 222.0/255.0, blue: 163.0/255.0, alpha: 1.0)
         let attribute = NSMutableAttributedString.init(string: "€€€")

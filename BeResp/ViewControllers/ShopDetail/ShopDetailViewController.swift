@@ -32,8 +32,7 @@ class ShopDetailViewController: UIViewController {
 
     @IBOutlet weak var descriptionLabel: UILabel!
     
-    @IBOutlet weak var ratingRoundedView: UIView!
-    @IBOutlet weak var ratingLabel: UILabel!
+    @IBOutlet weak var flagBadgeView: FlagBadge!
     
     @IBOutlet weak var tabsIndicatorView: UIView!
     @IBOutlet weak var firstTabButton: UIButton!
@@ -62,7 +61,7 @@ class ShopDetailViewController: UIViewController {
         titleLabel.text = shop?.title
         subtitleLabel.text = shop?.category.rawValue
         descriptionLabel.text = shop?.information
-        ratingLabel.text = String(format:"%.1f", (shop?.rate)!)
+        flagBadgeView.configure(with: String(format:"%.1f", (shop?.rate)!))
         openningTimeLabel.text = shop?.openningTime
         localizationLabel.text = String(format:"%.1f KM", (shop?.distance!)!)
         extraLabel.text = "A EMPORTER"
@@ -72,14 +71,6 @@ class ShopDetailViewController: UIViewController {
         extraImageView.tintColor = UIColor(red: 233.0/255/0, green: 142.0/255.0, blue: 174.0/255.0, alpha: 1)
         
         // Rating View
-        ratingRoundedView.layer.cornerRadius = 8.0
-        let ratingShadowPath = UIBezierPath(rect: ratingRoundedView.bounds)
-        ratingRoundedView.layer.masksToBounds = false
-        ratingRoundedView.layer.shadowColor = UIColor.black.cgColor
-        ratingRoundedView.layer.shadowOffset = CGSize(width: 0.0, height: 10.0)
-        ratingRoundedView.layer.shadowRadius = 6.0
-        ratingRoundedView.layer.shadowOpacity = 0.3
-        ratingRoundedView.layer.shadowPath = ratingShadowPath.cgPath
     }
     
     // Actions

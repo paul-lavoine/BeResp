@@ -12,14 +12,29 @@ class MealViewController: UIViewController {
     
     // IBOutlet
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var mealHeader: MealHeader!
     
     // Data
     var meals: [Meal] = MealsController.shared.meals
+    var shop: Shop?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        titleLabel.text = shop?.title
+        
+        mealHeader.configure(with: (shop?.title)!)
+        self.tableView.tableHeaderView = mealHeader
     }
     
+    func configure(with shop: Shop) {
+        self.shop = shop
+    }
+    
+    @IBAction func dismissAction(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
 }
 
 extension MealViewController: UITableViewDataSource {
