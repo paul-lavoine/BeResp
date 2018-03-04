@@ -630,17 +630,32 @@ d'humains reponsables</string>
                                     <constraint firstAttribute="bottom" secondItem="zUe-wL-02h" secondAttribute="bottom" id="xf9-9e-7om"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TNk-yI-zyP">
+                                <rect key="frame" x="15" y="20" width="25" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="25" id="I2E-oV-USA"/>
+                                    <constraint firstAttribute="height" constant="15" id="ROs-QB-Smr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="picto_menu"/>
+                                <connections>
+                                    <action selector="showMenu:" destination="aKW-S0-trx" eventType="touchUpInside" id="et1-ra-I4q"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="hYM-l2-neg" firstAttribute="trailing" secondItem="Iv7-de-IMy" secondAttribute="trailing" id="1VX-ay-kdn"/>
                             <constraint firstItem="hYM-l2-neg" firstAttribute="leading" secondItem="Iv7-de-IMy" secondAttribute="leading" id="Iev-bH-5u2"/>
                             <constraint firstItem="hYM-l2-neg" firstAttribute="height" secondItem="Hdn-Cw-A9L" secondAttribute="height" multiplier="1:3" id="Qgt-ZS-fqx"/>
+                            <constraint firstItem="TNk-yI-zyP" firstAttribute="leading" secondItem="Iv7-de-IMy" secondAttribute="leading" constant="15" id="VMx-Yi-BZT"/>
                             <constraint firstItem="XGg-f1-MBr" firstAttribute="leading" secondItem="Iv7-de-IMy" secondAttribute="leading" id="VxA-NJ-to9"/>
                             <constraint firstItem="XGg-f1-MBr" firstAttribute="top" secondItem="hYM-l2-neg" secondAttribute="bottom" id="Yh2-rH-zSO"/>
                             <constraint firstItem="XGg-f1-MBr" firstAttribute="trailing" secondItem="Iv7-de-IMy" secondAttribute="trailing" id="ZAx-EI-9mT"/>
                             <constraint firstItem="hYM-l2-neg" firstAttribute="top" secondItem="Hdn-Cw-A9L" secondAttribute="top" id="dTA-8F-jpp"/>
                             <constraint firstItem="Iv7-de-IMy" firstAttribute="bottom" secondItem="XGg-f1-MBr" secondAttribute="bottom" id="udZ-9Y-ZrA"/>
+                            <constraint firstItem="TNk-yI-zyP" firstAttribute="top" secondItem="Hdn-Cw-A9L" secondAttribute="top" constant="20" id="zMb-V5-uwr"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Iv7-de-IMy"/>
                     </view>
@@ -705,8 +720,16 @@ d'humains reponsables</string>
                                         <state key="normal" title="Button"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cuU-2B-stU">
-                                        <rect key="frame" x="10" y="15" width="54" height="34"/>
-                                        <state key="normal" title="Button"/>
+                                        <rect key="frame" x="10" y="9.5" width="45" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="8sQ-ZB-tfa"/>
+                                            <constraint firstAttribute="width" constant="45" id="iwy-xZ-t4P"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="left_arrow"/>
+                                        <connections>
+                                            <action selector="closeAction:" destination="jS1-Rb-jIP" eventType="touchUpInside" id="TUE-0Q-jPQ"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1067,6 +1090,7 @@ d'humains reponsables</string>
         <image name="picto_localization" width="30" height="30"/>
         <image name="picto_localize" width="16" height="19"/>
         <image name="picto_meal" width="29" height="29"/>
+        <image name="picto_menu" width="97" height="65"/>
         <image name="picto_search" width="21" height="22"/>
         <image name="picto_time" width="25" height="25"/>
         <image name="profile_banner" width="375" height="273"/>

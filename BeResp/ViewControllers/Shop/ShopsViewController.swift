@@ -27,6 +27,10 @@ class ShopsViewController: UIViewController {
         tableView.rowHeight = height
         tableView.register(ShopCellConstant.nib, forCellReuseIdentifier: ShopCellConstant.reuseIdentifier)
     }
+    
+    @IBAction func closeAction(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
 }
 
 

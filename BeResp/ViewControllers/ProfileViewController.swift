@@ -60,4 +60,8 @@ class ProfileViewController: UIViewController, UIGestureRecognizerDelegate {
     
     @IBAction func organisationsAction(_ sender: Any) {
     }
+    
+    @IBAction func showMenu(_ sender: Any) {
+        self.navigationController?.showLeftViewAnimated(nil)
+    }
 }
