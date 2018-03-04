@@ -58,10 +58,12 @@ extension MealViewController: UITableViewDataSource {
         cell.configure(with: meal)
         return cell
     }
-    
-    
 }
 
 extension MealViewController: UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        self.navigationController?.present(StoryboardManager.mealDetailViewController(meal: meals[indexPath.row]), animated: true, completion: nil)
+    }
 }

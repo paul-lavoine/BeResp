@@ -82,9 +82,8 @@ class ShopDetailViewController: UIViewController {
     @IBAction func showMenu(_ sender: Any) {
         animeTabs(display: .menu)
         
-        self.navigationController?.present(StoryboardManager.mealViewController(shop: shop!), animated: true, completion: { () -> Void in
-            self.animeTabs(display: .description)
-        })
+        self.navigationController?.pushViewController(StoryboardManager.mealViewController(shop: shop!), animated: true)
+        self.animeTabs(display: .description)
     }
     
     @IBAction func showComment(_ sender: Any) {

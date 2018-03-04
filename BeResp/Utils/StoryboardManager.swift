@@ -61,5 +61,13 @@ class StoryboardManager: NSObject {
         mealViewController.configure(with: shop)
         return mealViewController
     }
+    
+    static func mealDetailViewController(meal: Meal) -> UIViewController {
+        guard let mealDetailViewController = StoryboardManager.main().instantiateViewController(withIdentifier: "MealDetailViewController") as? MealDetailViewController else {
+            fatalError("Cannot instantiate view controller MealDetailViewController from storyboard")
+        }
+        mealDetailViewController.configure(with: meal)
+        return mealDetailViewController
+    }
 }
 

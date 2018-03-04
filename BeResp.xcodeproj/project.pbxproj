@@ -27,6 +27,7 @@
 		A8A0E606204C35DF00D21DFB /* FlagBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A0E605204C35DF00D21DFB /* FlagBadge.swift */; };
 		A8A0E608204C35EB00D21DFB /* FlagBadge.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8A0E607204C35EB00D21DFB /* FlagBadge.xib */; };
 		A8A0E60A204C411200D21DFB /* UIView+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A0E609204C411200D21DFB /* UIView+Tools.swift */; };
+		A8A0E60D204C4AF500D21DFB /* MealDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A0E60C204C4AF500D21DFB /* MealDetailViewController.swift */; };
 		A8C7A0A1204AF61700A41288 /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C7A0A0204AF61700A41288 /* Shop.swift */; };
 		A8C7A0A3204AF76600A41288 /* MenuHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C7A0A2204AF76600A41288 /* MenuHeaderView.swift */; };
 		A8C7A0A6204B029E00A41288 /* ShopsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C7A0A5204B029E00A41288 /* ShopsController.swift */; };
@@ -66,6 +67,7 @@
 		A8A0E605204C35DF00D21DFB /* FlagBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagBadge.swift; sourceTree = "<group>"; };
 		A8A0E607204C35EB00D21DFB /* FlagBadge.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlagBadge.xib; sourceTree = "<group>"; };
 		A8A0E609204C411200D21DFB /* UIView+Tools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Tools.swift"; sourceTree = "<group>"; };
+		A8A0E60C204C4AF500D21DFB /* MealDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailViewController.swift; sourceTree = "<group>"; };
 		A8C7A0A0204AF61700A41288 /* Shop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shop.swift; sourceTree = "<group>"; };
 		A8C7A0A2204AF76600A41288 /* MenuHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuHeaderView.swift; sourceTree = "<group>"; };
 		A8C7A0A5204B029E00A41288 /* ShopsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopsController.swift; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 				3A19D0082044348500FC1ADB /* HomePage */,
 				A8C7A0B3204C1AAE00A41288 /* Login */,
 				A8C7A0B2204C1AA500A41288 /* Meal */,
+				A8A0E60B204C4AE100D21DFB /* MealDetail */,
 				3A3AB09F20417CA600A94EE8 /* Menu */,
 				A8C7A0B5204C1AC600A41288 /* Profile */,
 				A8C7A0A9204B0B7A00A41288 /* Shop */,
@@ -224,6 +227,14 @@
 				A8A0E607204C35EB00D21DFB /* FlagBadge.xib */,
 			);
 			path = Flag;
+			sourceTree = "<group>";
+		};
+		A8A0E60B204C4AE100D21DFB /* MealDetail */ = {
+			isa = PBXGroup;
+			children = (
+				A8A0E60C204C4AF500D21DFB /* MealDetailViewController.swift */,
+			);
+			path = MealDetail;
 			sourceTree = "<group>";
 		};
 		A8C7A09F204AF60500A41288 /* Models */ = {
@@ -443,6 +454,7 @@
 				3A09D503204AAE72009D387F /* StoryboardManager.swift in Sources */,
 				3AC3D002204164D90086077E /* LoginViewController.swift in Sources */,
 				A8C7A0BB204C1BBA00A41288 /* MealCell.swift in Sources */,
+				A8A0E60D204C4AF500D21DFB /* MealDetailViewController.swift in Sources */,
 				3AC3D000204164D90086077E /* AppDelegate.swift in Sources */,
 				A8C7A0B7204C1AE800A41288 /* MealViewController.swift in Sources */,
 				3AC3D01920416C2E0086077E /* HomeViewController.swift in Sources */,
