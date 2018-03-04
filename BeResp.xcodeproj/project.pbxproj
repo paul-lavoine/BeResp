@@ -31,6 +31,10 @@
 		A8C7A0AB204B0B9700A41288 /* ShopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C7A0AA204B0B9700A41288 /* ShopCell.swift */; };
 		A8C7A0AD204B10E600A41288 /* ShopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8C7A0AC204B10E600A41288 /* ShopCell.xib */; };
 		A8C7A0B1204B4E6300A41288 /* ShopDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C7A0B0204B4E6300A41288 /* ShopDetailViewController.swift */; };
+		A8C7A0B7204C1AE800A41288 /* MealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C7A0B6204C1AE800A41288 /* MealViewController.swift */; };
+		A8C7A0B9204C1B4100A41288 /* MealsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C7A0B8204C1B4100A41288 /* MealsController.swift */; };
+		A8C7A0BB204C1BBA00A41288 /* MealCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C7A0BA204C1BBA00A41288 /* MealCell.swift */; };
+		A8C7A0BD204C1BFA00A41288 /* MealCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8C7A0BC204C1BFA00A41288 /* MealCell.xib */; };
 		A97A1A713A6EA15683A3126A /* Pods_BeResp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8C6B1761C371597D2225F74 /* Pods_BeResp.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +66,10 @@
 		A8C7A0AA204B0B9700A41288 /* ShopCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopCell.swift; sourceTree = "<group>"; };
 		A8C7A0AC204B10E600A41288 /* ShopCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShopCell.xib; sourceTree = "<group>"; };
 		A8C7A0B0204B4E6300A41288 /* ShopDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopDetailViewController.swift; sourceTree = "<group>"; };
+		A8C7A0B6204C1AE800A41288 /* MealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealViewController.swift; sourceTree = "<group>"; };
+		A8C7A0B8204C1B4100A41288 /* MealsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsController.swift; sourceTree = "<group>"; };
+		A8C7A0BA204C1BBA00A41288 /* MealCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealCell.swift; sourceTree = "<group>"; };
+		A8C7A0BC204C1BFA00A41288 /* MealCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MealCell.xib; sourceTree = "<group>"; };
 		D8C6B1761C371597D2225F74 /* Pods_BeResp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeResp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E616BC2E983FB55310C51FC2 /* Pods-BeResp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeResp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BeResp/Pods-BeResp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -164,11 +172,12 @@
 			children = (
 				3A09D504204AC467009D387F /* Favorites */,
 				3A19D0082044348500FC1ADB /* HomePage */,
-				3AC3D001204164D90086077E /* LoginViewController.swift */,
+				A8C7A0B3204C1AAE00A41288 /* Login */,
+				A8C7A0B2204C1AA500A41288 /* Meal */,
 				3A3AB09F20417CA600A94EE8 /* Menu */,
-				3AC3D011204169EC0086077E /* ProfileViewController.swift */,
+				A8C7A0B5204C1AC600A41288 /* Profile */,
 				A8C7A0A9204B0B7A00A41288 /* Shop */,
-				A8C7A0B0204B4E6300A41288 /* ShopDetailViewController.swift */,
+				A8C7A0B4204C1ABF00A41288 /* ShopDetail */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -203,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				A8C7A0A5204B029E00A41288 /* ShopsController.swift */,
+				A8C7A0B8204C1B4100A41288 /* MealsController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -215,6 +225,40 @@
 				A8C7A0AC204B10E600A41288 /* ShopCell.xib */,
 			);
 			path = Shop;
+			sourceTree = "<group>";
+		};
+		A8C7A0B2204C1AA500A41288 /* Meal */ = {
+			isa = PBXGroup;
+			children = (
+				A8C7A0B6204C1AE800A41288 /* MealViewController.swift */,
+				A8C7A0BA204C1BBA00A41288 /* MealCell.swift */,
+				A8C7A0BC204C1BFA00A41288 /* MealCell.xib */,
+			);
+			path = Meal;
+			sourceTree = "<group>";
+		};
+		A8C7A0B3204C1AAE00A41288 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				3AC3D001204164D90086077E /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		A8C7A0B4204C1ABF00A41288 /* ShopDetail */ = {
+			isa = PBXGroup;
+			children = (
+				A8C7A0B0204B4E6300A41288 /* ShopDetailViewController.swift */,
+			);
+			path = ShopDetail;
+			sourceTree = "<group>";
+		};
+		A8C7A0B5204C1AC600A41288 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				3AC3D011204169EC0086077E /* ProfileViewController.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,6 +325,7 @@
 			files = (
 				3AC3D00A204164D90086077E /* LaunchScreen.storyboard in Resources */,
 				3AC3D007204164D90086077E /* Assets.xcassets in Resources */,
+				A8C7A0BD204C1BFA00A41288 /* MealCell.xib in Resources */,
 				3AC3D005204164D90086077E /* Main.storyboard in Resources */,
 				A8C7A0AD204B10E600A41288 /* ShopCell.xib in Resources */,
 			);
@@ -349,6 +394,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8C7A0B9204C1B4100A41288 /* MealsController.swift in Sources */,
 				3A09D4FB204AAD12009D387F /* FavoritesViewController.swift in Sources */,
 				3A09D4FF204AAD70009D387F /* FavoritesCell.swift in Sources */,
 				3AC3D01420416A0B0086077E /* ShopsViewController.swift in Sources */,
@@ -365,7 +411,9 @@
 				A8C7A0B1204B4E6300A41288 /* ShopDetailViewController.swift in Sources */,
 				3A09D503204AAE72009D387F /* StoryboardManager.swift in Sources */,
 				3AC3D002204164D90086077E /* LoginViewController.swift in Sources */,
+				A8C7A0BB204C1BBA00A41288 /* MealCell.swift in Sources */,
 				3AC3D000204164D90086077E /* AppDelegate.swift in Sources */,
+				A8C7A0B7204C1AE800A41288 /* MealViewController.swift in Sources */,
 				3AC3D01920416C2E0086077E /* HomeViewController.swift in Sources */,
 				3A3AB09E20417AF100A94EE8 /* MenuViewController.swift in Sources */,
 				3A3AB0A320417D1F00A94EE8 /* MainViewController.swift in Sources */,
