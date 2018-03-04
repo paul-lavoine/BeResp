@@ -15,7 +15,6 @@ class FavoritesViewController: UIViewController {
         super.viewDidLoad()
         
         tableView.backgroundColor = .clear
-        view.backgroundColor = .blue
     }
 }
 
