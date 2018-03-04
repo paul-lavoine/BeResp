@@ -418,6 +418,9 @@ d'humains reponsables</string>
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="down_arrow"/>
+                                <connections>
+                                    <action selector="dismissAction:" destination="L7j-3m-QYX" eventType="touchUpInside" id="fNh-Ko-rGH"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

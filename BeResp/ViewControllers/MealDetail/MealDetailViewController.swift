@@ -49,4 +49,8 @@ class MealDetailViewController: UIViewController {
     @IBAction func respValidAction(_ sender: Any) {
         
     }
+    
+    @IBAction func dismissAction(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
 }
