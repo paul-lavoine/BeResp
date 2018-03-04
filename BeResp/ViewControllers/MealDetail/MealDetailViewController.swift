@@ -15,6 +15,7 @@ class MealDetailViewController: UIViewController {
     @IBOutlet weak var gradientView: UIView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var flagBadgeView: FlagBadge!
+    @IBOutlet weak var respButton: UIView!
     
     // Data
     var meal: Meal?
@@ -33,7 +34,7 @@ class MealDetailViewController: UIViewController {
         headerImageView.image = meal?.image
         titleLabel.text = meal?.title
         
-        flagBadgeView.configure(with: String(meal!.price) + "€")
+        flagBadgeView.configure(with: String(meal!.price) + "€", font: UIFont.systemFont(ofSize: 20.0))
         flagBadgeView.addMealShadow()
         
         gradientView.setNeedsLayout()

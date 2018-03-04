@@ -347,24 +347,24 @@ d'humains reponsables</string>
                                 <color key="backgroundColor" red="1" green="0.1005161125" blue="0.074922599270000001" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tUT-o2-8Cg">
-                                <rect key="frame" x="20" y="306" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="20" y="306.5" width="48" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vn6-vJ-et1" customClass="FlagBadge" customModule="BeResp" customModuleProvider="target">
-                                <rect key="frame" x="275" y="286" width="80" height="50"/>
+                                <rect key="frame" x="275" y="296" width="80" height="45"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="3uo-H4-JUM"/>
+                                    <constraint firstAttribute="height" constant="45" id="3uo-H4-JUM"/>
                                     <constraint firstAttribute="width" constant="80" id="OdE-QG-cV5"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IgU-W0-Tlq">
-                                <rect key="frame" x="20" y="387" width="335" height="90"/>
+                                <rect key="frame" x="20" y="400.5" width="335" height="62.5"/>
                                 <string key="text">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" red="0.65228337599999997" green="0.65874162729999997" blue="0.65874162729999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i1G-7G-Zbf">
@@ -398,13 +398,13 @@ d'humains reponsables</string>
                                 </connections>
                             </view>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Ajouter un commentaire" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VN9-uK-uXF">
-                                <rect key="frame" x="20" y="530" width="335" height="17"/>
+                                <rect key="frame" x="25" y="530" width="325" height="17"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <view alpha="0.45000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E2y-Lo-TTx">
-                                <rect key="frame" x="20" y="546" width="335" height="1"/>
+                                <rect key="frame" x="20" y="561" width="335" height="1"/>
                                 <color key="backgroundColor" red="0.77246409650000003" green="0.77259790900000003" blue="0.77245563269999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="JHY-YY-UVt"/>
@@ -435,22 +435,22 @@ d'humains reponsables</string>
                             <constraint firstItem="kQL-39-hDi" firstAttribute="top" secondItem="B2v-GV-wxF" secondAttribute="top" constant="10" id="Hw9-nj-MRx"/>
                             <constraint firstAttribute="trailing" secondItem="IgU-W0-Tlq" secondAttribute="trailing" constant="20" id="LVF-su-MLs"/>
                             <constraint firstItem="i1G-7G-Zbf" firstAttribute="leading" secondItem="g5w-Db-B0B" secondAttribute="leading" constant="20" id="Na7-eR-vU0"/>
-                            <constraint firstItem="E2y-Lo-TTx" firstAttribute="leading" secondItem="VN9-uK-uXF" secondAttribute="leading" id="Ud1-B8-KVP"/>
+                            <constraint firstItem="E2y-Lo-TTx" firstAttribute="leading" secondItem="VN9-uK-uXF" secondAttribute="leading" constant="-5" id="Ud1-B8-KVP"/>
                             <constraint firstItem="g5w-Db-B0B" firstAttribute="trailing" secondItem="slK-L6-SXE" secondAttribute="trailing" id="VsB-b0-I2U"/>
                             <constraint firstItem="Z4g-0D-gm8" firstAttribute="height" secondItem="slK-L6-SXE" secondAttribute="height" multiplier="2:3" id="VzJ-yN-hQy"/>
-                            <constraint firstItem="E2y-Lo-TTx" firstAttribute="trailing" secondItem="VN9-uK-uXF" secondAttribute="trailing" id="Z8w-eW-x8S"/>
-                            <constraint firstItem="E2y-Lo-TTx" firstAttribute="bottom" secondItem="VN9-uK-uXF" secondAttribute="bottom" id="bXE-kb-QUu"/>
+                            <constraint firstItem="E2y-Lo-TTx" firstAttribute="trailing" secondItem="VN9-uK-uXF" secondAttribute="trailing" constant="5" id="Z8w-eW-x8S"/>
+                            <constraint firstItem="E2y-Lo-TTx" firstAttribute="bottom" secondItem="VN9-uK-uXF" secondAttribute="bottom" constant="15" id="bXE-kb-QUu"/>
                             <constraint firstItem="i1G-7G-Zbf" firstAttribute="bottom" secondItem="g5w-Db-B0B" secondAttribute="bottom" constant="-20" id="cFe-er-3Rs"/>
                             <constraint firstItem="i1G-7G-Zbf" firstAttribute="top" secondItem="VN9-uK-uXF" secondAttribute="bottom" constant="40" id="cO7-GL-HW6"/>
                             <constraint firstItem="IgU-W0-Tlq" firstAttribute="leading" secondItem="g5w-Db-B0B" secondAttribute="leading" constant="20" id="goO-oH-Lcb"/>
                             <constraint firstItem="slK-L6-SXE" firstAttribute="height" secondItem="B2v-GV-wxF" secondAttribute="height" multiplier="3:7" id="h5J-g4-Wtx"/>
-                            <constraint firstItem="vn6-vJ-et1" firstAttribute="top" secondItem="slK-L6-SXE" secondAttribute="bottom" id="hMg-vX-nBP"/>
-                            <constraint firstItem="g5w-Db-B0B" firstAttribute="trailing" secondItem="VN9-uK-uXF" secondAttribute="trailing" constant="20" id="hb0-rU-s4b"/>
+                            <constraint firstItem="vn6-vJ-et1" firstAttribute="top" secondItem="slK-L6-SXE" secondAttribute="bottom" constant="10" id="hMg-vX-nBP"/>
+                            <constraint firstItem="g5w-Db-B0B" firstAttribute="trailing" secondItem="VN9-uK-uXF" secondAttribute="trailing" constant="25" id="hb0-rU-s4b"/>
                             <constraint firstItem="tUT-o2-8Cg" firstAttribute="leading" secondItem="g5w-Db-B0B" secondAttribute="leading" constant="20" id="joj-Tb-0qL"/>
+                            <constraint firstItem="tUT-o2-8Cg" firstAttribute="centerY" secondItem="vn6-vJ-et1" secondAttribute="centerY" id="mdD-UE-AK8"/>
                             <constraint firstItem="Z4g-0D-gm8" firstAttribute="leading" secondItem="g5w-Db-B0B" secondAttribute="leading" id="r20-Ys-L6c"/>
-                            <constraint firstItem="tUT-o2-8Cg" firstAttribute="top" secondItem="slK-L6-SXE" secondAttribute="bottom" constant="20" id="vI6-72-bGX"/>
-                            <constraint firstItem="VN9-uK-uXF" firstAttribute="leading" secondItem="g5w-Db-B0B" secondAttribute="leading" constant="20" id="w16-uz-wRu"/>
-                            <constraint firstItem="IgU-W0-Tlq" firstAttribute="top" secondItem="tUT-o2-8Cg" secondAttribute="bottom" constant="60" id="yqs-Gh-cDD"/>
+                            <constraint firstItem="VN9-uK-uXF" firstAttribute="leading" secondItem="g5w-Db-B0B" secondAttribute="leading" constant="25" id="w16-uz-wRu"/>
+                            <constraint firstItem="IgU-W0-Tlq" firstAttribute="top" secondItem="tUT-o2-8Cg" secondAttribute="bottom" constant="70" id="yqs-Gh-cDD"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="g5w-Db-B0B"/>
                     </view>
@@ -458,6 +458,7 @@ d'humains reponsables</string>
                         <outlet property="flagBadgeView" destination="vn6-vJ-et1" id="tSb-YN-9wp"/>
                         <outlet property="gradientView" destination="Z4g-0D-gm8" id="i51-yZ-lec"/>
                         <outlet property="headerImageView" destination="slK-L6-SXE" id="QXg-9K-FbL"/>
+                        <outlet property="respButton" destination="i1G-7G-Zbf" id="TLc-og-QTi"/>
                         <outlet property="titleLabel" destination="tUT-o2-8Cg" id="4Ge-EL-N7j"/>
                     </connections>
                 </viewController>
