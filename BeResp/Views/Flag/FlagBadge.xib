@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -59,8 +58,6 @@
                 <constraint firstItem="bCl-4q-nHh" firstAttribute="top" secondItem="ndG-h3-dbQ" secondAttribute="top" id="eC4-W1-FBU"/>
                 <constraint firstItem="pmd-JE-VGn" firstAttribute="width" secondItem="ndG-h3-dbQ" secondAttribute="width" multiplier="1:2" id="jVZ-z6-uD0"/>
                 <constraint firstItem="tAv-WY-KMQ" firstAttribute="height" secondItem="ndG-h3-dbQ" secondAttribute="height" multiplier="1:2" id="mT8-N1-twF"/>
-                <constraint firstAttribute="width" secondItem="ndG-h3-dbQ" secondAttribute="height" multiplier="1:1" id="rsX-5F-zK2"/>
-                <constraint firstAttribute="height" constant="40" id="vmh-Hq-xyH"/>
                 <constraint firstAttribute="bottom" secondItem="WSJ-Bt-ug4" secondAttribute="bottom" id="wbb-K6-dX6"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
