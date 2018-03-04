@@ -51,7 +51,7 @@ class StoryboardManager: NSObject {
             fatalError("Cannot instantiate view controller ShopDetailViewController from storyboard")
         }
         shopDetailViewController.configure(with: shop)
-        return shopsViewController
+        return shopDetailViewController
     }
 }
 

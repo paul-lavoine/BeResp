@@ -32,10 +32,11 @@ class Shop: NSObject {
     var information: String!
     var price: ShopPrice!
     var rate: Double!
+    var distance: Double!
     var comments: [String] = []
     var commentsCount: Int!
     
-    init(with title:String, category: ShopCategory, image: String, openningTime: String, information: String, price: ShopPrice, rate: Double, commentsCount: Int) {
+    init(with title:String, category: ShopCategory, image: String, openningTime: String, information: String, price: ShopPrice, rate: Double, commentsCount: Int, distance: Double) {
         super.init()
         
         self.title = title
@@ -46,5 +47,6 @@ class Shop: NSObject {
         self.price = price
         self.rate = rate
         self.commentsCount = commentsCount
+        self.distance = distance
     }
 }

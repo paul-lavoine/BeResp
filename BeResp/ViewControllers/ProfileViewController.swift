@@ -10,8 +10,13 @@ import UIKit
 
 class ProfileViewController: UIViewController, UIGestureRecognizerDelegate {
     
+    // IBOutlet
     @IBOutlet weak var searchContainerView: UIView!
     @IBOutlet weak var nearestShopContainerView: ShopCell!
+    @IBOutlet weak var localizeButton: UIButton!
+    
+    // Data
+    var nearestShop: Shop = ShopsController.shared.nearestShop()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +25,8 @@ class ProfileViewController: UIViewController, UIGestureRecognizerDelegate {
     
     func configureUI() {
         self.navigationController?.navigationBar.isHidden = true
+        
+        localizeButton.imageView?.tintColor = .white
         
         searchContainerView.layer.cornerRadius = 5.0
         let shadowPath = UIBezierPath(rect: searchContainerView.bounds)
@@ -32,7 +39,7 @@ class ProfileViewController: UIViewController, UIGestureRecognizerDelegate {
         
         let shop: ShopCell = ShopCell.instanceFromNib()
         shop.frame = CGRect(x: 3, y: 0, width: self.view.frame.size.width - 7, height: ShopCell.heightCell)
-        shop.configure(with: ShopsController.shared.nearestShop())
+        shop.configure(with: nearestShop)
         nearestShopContainerView.addSubview(shop)
     }
     
@@ -45,6 +52,10 @@ class ProfileViewController: UIViewController, UIGestureRecognizerDelegate {
     }
     
     @IBAction func calendarAction(_ sender: Any) {
+    }
+    
+    @IBAction func showShopDetail(_ sender: Any) {
+        self.navigationController?.pushViewController(StoryboardManager.shopDetailViewController(shop: nearestShop), animated: true) 
     }
     
     @IBAction func organisationsAction(_ sender: Any) {
