@@ -14,6 +14,24 @@ enum MenuType: String {
     case notifications = "Notification"
     case settings      = "Réglages"
     case loggout       = "Se déconnecter"
+    
+    func image() -> UIImage {
+        var imageName = ""
+        switch self {
+        case .profil:
+            imageName = "picto_profil"
+        case .favorites:
+            imageName = "picto_favorites"
+        case .notifications:
+            imageName = "picto_notification"
+        case .settings:
+            imageName = "picto_settings"
+        case .loggout:
+            imageName = "picto_loggout"
+        }
+        
+        return UIImage(named: imageName)!
+    }
 }
 
 class MenuViewController: UIViewController {

@@ -27,6 +27,7 @@ class MenuCell: UITableViewCell {
     
     func configure(with type: MenuType) {
         titleLabel.text = type.rawValue
+        iconImageView.image = type.image()
     }
         
 }

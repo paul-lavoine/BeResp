@@ -10,6 +10,13 @@
 		3A09D4FB204AAD12009D387F /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A09D4FA204AAD12009D387F /* FavoritesViewController.swift */; };
 		3A09D4FF204AAD70009D387F /* FavoritesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A09D4FE204AAD70009D387F /* FavoritesCell.swift */; };
 		3A09D503204AAE72009D387F /* StoryboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A09D502204AAE72009D387F /* StoryboardManager.swift */; };
+		3A15EDB320500B6000A6AF75 /* PermanentMarker-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3A15EDB220500B6000A6AF75 /* PermanentMarker-Regular.ttf */; };
+		3A15EDBA20500B6900A6AF75 /* Yantramanav-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3A15EDB420500B6800A6AF75 /* Yantramanav-Regular.ttf */; };
+		3A15EDBB20500B6900A6AF75 /* Yantramanav-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3A15EDB520500B6900A6AF75 /* Yantramanav-Light.ttf */; };
+		3A15EDBC20500B6900A6AF75 /* Yantramanav-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3A15EDB620500B6900A6AF75 /* Yantramanav-Bold.ttf */; };
+		3A15EDBD20500B6900A6AF75 /* Yantramanav-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3A15EDB720500B6900A6AF75 /* Yantramanav-Thin.ttf */; };
+		3A15EDBE20500B6900A6AF75 /* Yantramanav-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3A15EDB820500B6900A6AF75 /* Yantramanav-Black.ttf */; };
+		3A15EDBF20500B6900A6AF75 /* Yantramanav-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3A15EDB920500B6900A6AF75 /* Yantramanav-Medium.ttf */; };
 		3A17FDE4204589E7008418C6 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A17FDE3204589E7008418C6 /* MenuCell.swift */; };
 		3A19D00A2044349900FC1ADB /* HomeDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A19D0092044349900FC1ADB /* HomeDescriptionViewController.swift */; };
 		3A3AB09E20417AF100A94EE8 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3AB09D20417AF100A94EE8 /* MenuViewController.swift */; };
@@ -47,6 +54,13 @@
 		3A09D4FA204AAD12009D387F /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		3A09D4FE204AAD70009D387F /* FavoritesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesCell.swift; sourceTree = "<group>"; };
 		3A09D502204AAE72009D387F /* StoryboardManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardManager.swift; sourceTree = "<group>"; };
+		3A15EDB220500B6000A6AF75 /* PermanentMarker-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PermanentMarker-Regular.ttf"; sourceTree = "<group>"; };
+		3A15EDB420500B6800A6AF75 /* Yantramanav-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Yantramanav-Regular.ttf"; sourceTree = "<group>"; };
+		3A15EDB520500B6900A6AF75 /* Yantramanav-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Yantramanav-Light.ttf"; sourceTree = "<group>"; };
+		3A15EDB620500B6900A6AF75 /* Yantramanav-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Yantramanav-Bold.ttf"; sourceTree = "<group>"; };
+		3A15EDB720500B6900A6AF75 /* Yantramanav-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Yantramanav-Thin.ttf"; sourceTree = "<group>"; };
+		3A15EDB820500B6900A6AF75 /* Yantramanav-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Yantramanav-Black.ttf"; sourceTree = "<group>"; };
+		3A15EDB920500B6900A6AF75 /* Yantramanav-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Yantramanav-Medium.ttf"; sourceTree = "<group>"; };
 		3A17FDE3204589E7008418C6 /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		3A19D0092044349900FC1ADB /* HomeDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDescriptionViewController.swift; sourceTree = "<group>"; };
 		3A3AB09D20417AF100A94EE8 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
@@ -114,6 +128,20 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		3A15EDB120500B5400A6AF75 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				3A15EDB820500B6900A6AF75 /* Yantramanav-Black.ttf */,
+				3A15EDB620500B6900A6AF75 /* Yantramanav-Bold.ttf */,
+				3A15EDB520500B6900A6AF75 /* Yantramanav-Light.ttf */,
+				3A15EDB920500B6900A6AF75 /* Yantramanav-Medium.ttf */,
+				3A15EDB420500B6800A6AF75 /* Yantramanav-Regular.ttf */,
+				3A15EDB720500B6900A6AF75 /* Yantramanav-Thin.ttf */,
+				3A15EDB220500B6000A6AF75 /* PermanentMarker-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		3A19D0082044348500FC1ADB /* HomePage */ = {
 			isa = PBXGroup;
 			children = (
@@ -171,6 +199,7 @@
 		3AC3D01A20416CD40086077E /* Supports Files */ = {
 			isa = PBXGroup;
 			children = (
+				3A15EDB120500B5400A6AF75 /* Fonts */,
 				3AC3D006204164D90086077E /* Assets.xcassets */,
 				3AC3D00B204164D90086077E /* Info.plist */,
 				3AC3D008204164D90086077E /* LaunchScreen.storyboard */,
@@ -364,8 +393,15 @@
 			files = (
 				3AC3D00A204164D90086077E /* LaunchScreen.storyboard in Resources */,
 				3AC3D007204164D90086077E /* Assets.xcassets in Resources */,
+				3A15EDBD20500B6900A6AF75 /* Yantramanav-Thin.ttf in Resources */,
 				A8C7A0BD204C1BFA00A41288 /* MealCell.xib in Resources */,
+				3A15EDBB20500B6900A6AF75 /* Yantramanav-Light.ttf in Resources */,
+				3A15EDBC20500B6900A6AF75 /* Yantramanav-Bold.ttf in Resources */,
+				3A15EDBF20500B6900A6AF75 /* Yantramanav-Medium.ttf in Resources */,
 				3AC3D005204164D90086077E /* Main.storyboard in Resources */,
+				3A15EDBA20500B6900A6AF75 /* Yantramanav-Regular.ttf in Resources */,
+				3A15EDB320500B6000A6AF75 /* PermanentMarker-Regular.ttf in Resources */,
+				3A15EDBE20500B6900A6AF75 /* Yantramanav-Black.ttf in Resources */,
 				A8A0E608204C35EB00D21DFB /* FlagBadge.xib in Resources */,
 				A8C7A0AD204B10E600A41288 /* ShopCell.xib in Resources */,
 			);

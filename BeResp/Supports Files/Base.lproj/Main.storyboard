@@ -148,21 +148,21 @@ d'humains reponsables</string>
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" red="0.96852236986160278" green="0.96868795156478882" blue="0.96851199865341187" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MenuCell" rowHeight="85" id="3Jz-ku-M7e" customClass="MenuCell" customModule="BeResp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="85"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MenuCell" rowHeight="145" id="3Jz-ku-M7e" customClass="MenuCell" customModule="BeResp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="145"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3Jz-ku-M7e" id="NGl-Jy-CWe">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="85"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="145"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Uk6-0x-G5K">
-                                                    <rect key="frame" x="0.0" y="0.0" width="84.5" height="84.5"/>
+                                                    <rect key="frame" x="20" y="20" width="105" height="105"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="Uk6-0x-G5K" secondAttribute="height" id="n6v-di-InZ"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CXh-pk-fdv">
-                                                    <rect key="frame" x="114.5" y="32" width="42" height="21"/>
+                                                    <rect key="frame" x="155" y="62" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -170,10 +170,10 @@ d'humains reponsables</string>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="CXh-pk-fdv" firstAttribute="leading" secondItem="Uk6-0x-G5K" secondAttribute="trailing" constant="30" id="0me-vO-hqt"/>
-                                                <constraint firstAttribute="bottom" secondItem="Uk6-0x-G5K" secondAttribute="bottom" id="8XW-Co-jhl"/>
+                                                <constraint firstItem="Uk6-0x-G5K" firstAttribute="top" secondItem="NGl-Jy-CWe" secondAttribute="top" constant="20" id="LCM-EP-koV"/>
                                                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="CXh-pk-fdv" secondAttribute="trailing" constant="20" symbolic="YES" id="Mpj-Ey-w2M"/>
-                                                <constraint firstItem="Uk6-0x-G5K" firstAttribute="leading" secondItem="NGl-Jy-CWe" secondAttribute="leading" id="a9N-Nw-F9v"/>
-                                                <constraint firstItem="Uk6-0x-G5K" firstAttribute="top" secondItem="NGl-Jy-CWe" secondAttribute="top" id="b9Z-mk-p9B"/>
+                                                <constraint firstAttribute="bottom" secondItem="Uk6-0x-G5K" secondAttribute="bottom" constant="20" id="ZA4-qP-8to"/>
+                                                <constraint firstItem="Uk6-0x-G5K" firstAttribute="leading" secondItem="NGl-Jy-CWe" secondAttribute="leading" constant="20" id="lU6-kG-Nd2"/>
                                                 <constraint firstItem="CXh-pk-fdv" firstAttribute="centerY" secondItem="NGl-Jy-CWe" secondAttribute="centerY" id="yQL-Tn-7bj"/>
                                             </constraints>
                                         </tableViewCellContentView>

@@ -12,6 +12,7 @@ enum ShopCategory: String {
     case bio        = "Supermarché bio"
     case marche     = "Marché"
     case epicerie   = "Épicerie fine et art de la table"
+    case food   = "Foodtruc, Fast Food"
 }
 
 enum ShopPrice: Int {
