@@ -37,7 +37,7 @@ class ShopsViewController: UIViewController {
 extension ShopsViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        self.navigationController?.pushViewController(StoryboardManager.shopDetailViewController(shop: shops[indexPath.row]), animated: true)
+        self.navigationController?.pushViewController(StoryboardManager.shopContainerViewController(shop: shops[indexPath.row]), animated: true)
     }
 }
 

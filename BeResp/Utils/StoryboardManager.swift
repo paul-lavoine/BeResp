@@ -45,6 +45,13 @@ class StoryboardManager: NSObject {
         return shopsViewController
     }
     
+    static func shopContainerViewController(shop: Shop) -> UIViewController {
+        guard let shopContainerViewController = StoryboardManager.main().instantiateViewController(withIdentifier: "ShopContainerViewController") as? ShopContainerViewController else {
+            fatalError("Cannot instantiate view controller ShopContainerViewController from storyboard")
+        }
+        shopContainerViewController.configure(with: shop)
+        return shopContainerViewController
+    }
     
     static func shopDetailViewController(shop: Shop) -> UIViewController {
         guard let shopDetailViewController = StoryboardManager.main().instantiateViewController(withIdentifier: "ShopDetailViewController") as? ShopDetailViewController else {
@@ -68,6 +75,14 @@ class StoryboardManager: NSObject {
         }
         mealDetailViewController.configure(with: meal)
         return mealDetailViewController
+    }
+    
+    static func navigationControllerShopDetail() -> UINavigationController {
+        guard let navigationControllerShopDetail = StoryboardManager.main().instantiateViewController(withIdentifier: "NavigationControllerShopDetail") as? UINavigationController else {
+            fatalError("Cannot instantiate view controller NavigationControllerShopDetail from storyboard")
+        }
+        
+        return navigationControllerShopDetail
     }
 }
 
