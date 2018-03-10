@@ -53,7 +53,7 @@ class StoryboardManager: NSObject {
         return shopContainerViewController
     }
     
-    static func shopDetailViewController(shop: Shop) -> UIViewController {
+    static func shopDetailViewController(shop: Shop) -> ShopDetailViewController {
         guard let shopDetailViewController = StoryboardManager.main().instantiateViewController(withIdentifier: "ShopDetailViewController") as? ShopDetailViewController else {
             fatalError("Cannot instantiate view controller ShopDetailViewController from storyboard")
         }
@@ -61,15 +61,15 @@ class StoryboardManager: NSObject {
         return shopDetailViewController
     }
     
-    static func mealViewController(shop: Shop) -> UIViewController {
+    static func mealViewController(shop: Shop, delegate: ShopDetailDelegate) -> MealViewController {
         guard let mealViewController = StoryboardManager.main().instantiateViewController(withIdentifier: "MealViewController") as? MealViewController else {
             fatalError("Cannot instantiate view controller MealViewController from storyboard")
         }
-        mealViewController.configure(with: shop)
+        mealViewController.configure(with: shop, delegate: delegate)
         return mealViewController
     }
     
-    static func mealDetailViewController(meal: Meal) -> UIViewController {
+    static func mealDetailViewController(meal: Meal) -> MealDetailViewController {
         guard let mealDetailViewController = StoryboardManager.main().instantiateViewController(withIdentifier: "MealDetailViewController") as? MealDetailViewController else {
             fatalError("Cannot instantiate view controller MealDetailViewController from storyboard")
         }

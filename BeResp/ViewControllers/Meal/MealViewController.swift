@@ -18,6 +18,7 @@ class MealViewController: UIViewController {
     // Data
     var meals: [Meal] = MealsController.shared.meals
     var shop: Shop?
+    var delegate: ShopDetailDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,8 +33,9 @@ class MealViewController: UIViewController {
         self.tableView.tableHeaderView = mealHeader
     }
     
-    func configure(with shop: Shop) {
+    func configure(with shop: Shop, delegate: ShopDetailDelegate) {
         self.shop = shop
+        self.delegate = delegate
     }
     
     @IBAction func dismissAction(_ sender: Any) {
@@ -64,6 +66,6 @@ extension MealViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
-        self.navigationController?.present(StoryboardManager.mealDetailViewController(meal: meals[indexPath.row]), animated: true, completion: nil)
+        delegate?.didSelect(meal: meals[indexPath.row])
     }
 }

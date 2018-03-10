@@ -55,7 +55,7 @@ class ProfileViewController: UIViewController, UIGestureRecognizerDelegate {
     }
     
     @IBAction func showShopDetail(_ sender: Any) {
-        self.navigationController?.pushViewController(StoryboardManager.shopDetailViewController(shop: nearestShop), animated: true) 
+        self.navigationController?.pushViewController(StoryboardManager.shopContainerViewController(shop: nearestShop), animated: true) 
     }
     
     @IBAction func organisationsAction(_ sender: Any) {

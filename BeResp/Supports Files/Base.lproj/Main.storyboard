@@ -402,6 +402,9 @@ d'humains reponsables</string>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="L7j-3m-QYX" id="JYq-W4-hvF"/>
+                                </connections>
                             </textField>
                             <view alpha="0.45000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E2y-Lo-TTx">
                                 <rect key="frame" x="20" y="561" width="335" height="1"/>
@@ -1027,7 +1030,6 @@ d'humains reponsables</string>
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="showDescription:" destination="ZJE-xs-htl" eventType="touchUpInside" id="Fhw-e2-qLn"/>
                                             <action selector="showDescription:" destination="pAV-48-7i6" eventType="touchUpInside" id="o9H-e4-Tsp"/>
                                         </connections>
                                     </button>
@@ -1039,7 +1041,6 @@ d'humains reponsables</string>
                                             <color key="titleColor" red="0.77246409650000003" green="0.77259790900000003" blue="0.77245563269999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="showMenu:" destination="ZJE-xs-htl" eventType="touchUpInside" id="GQe-s2-TPd"/>
                                             <action selector="showMenu:" destination="pAV-48-7i6" eventType="touchUpInside" id="vOa-MM-mf5"/>
                                         </connections>
                                     </button>
@@ -1051,7 +1052,6 @@ d'humains reponsables</string>
                                             <color key="titleColor" red="0.77246409650000003" green="0.77259790900000003" blue="0.77245563269999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="showComment:" destination="ZJE-xs-htl" eventType="touchUpInside" id="4jg-Q9-Hke"/>
                                             <action selector="showComment:" destination="pAV-48-7i6" eventType="touchUpInside" id="JoC-tz-PZA"/>
                                         </connections>
                                     </button>
@@ -1078,7 +1078,6 @@ d'humains reponsables</string>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="left_arrow"/>
                                 <connections>
-                                    <action selector="closeAction:" destination="ZJE-xs-htl" eventType="touchUpInside" id="Q8N-Ls-jPz"/>
                                     <action selector="closeAction:" destination="pAV-48-7i6" eventType="touchUpInside" id="ouH-Nj-iFi"/>
                                 </connections>
                             </button>
@@ -1100,10 +1099,11 @@ d'humains reponsables</string>
                         <viewLayoutGuide key="safeArea" id="nb8-v1-05m"/>
                     </view>
                     <connections>
+                        <outlet property="backButton" destination="rtt-c1-eT4" id="WhP-BW-FyH"/>
                         <outlet property="embeddedContainerView" destination="tF5-aD-u3O" id="1lY-Ze-ELL"/>
                         <outlet property="firstTabButton" destination="F4r-aB-2NT" id="y0C-n0-7ao"/>
                         <outlet property="secondTabButton" destination="kOP-vY-fM2" id="7Vg-ad-PIy"/>
-                        <outlet property="tabsIndicatorLeadingConstraint" destination="BIJ-f2-2OX" id="YQn-Ny-dMe"/>
+                        <outlet property="tabsIndicatorLeadingConstraint" destination="GZi-f0-k1v" id="GEp-KA-STD"/>
                         <outlet property="tabsIndicatorView" destination="tli-QU-KPq" id="pBF-oV-VIk"/>
                         <outlet property="thirdTabButton" destination="bXW-Wk-ICC" id="Vib-fW-f8U"/>
                     </connections>
@@ -1111,22 +1111,6 @@ d'humains reponsables</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JMQ-lo-d0q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2381.5999999999999" y="124.58770614692655"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="AxP-80-sVi">
-            <objects>
-                <navigationController storyboardIdentifier="NavigationControllerShopDetail" id="2rD-wb-LSj" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KuY-TU-5Tk">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="ZJE-xs-htl" kind="relationship" relationship="rootViewController" id="Rvh-FC-DTO"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HWc-ty-6KK" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3162" y="125"/>
         </scene>
         <!--Shop Detail View Controller-->
         <scene sceneID="xPy-Ah-ceo">
@@ -1282,23 +1266,19 @@ d'humains reponsables</string>
                         <outlet property="descriptionLabel" destination="gHh-wO-btB" id="Znx-1A-CfO"/>
                         <outlet property="extraImageView" destination="9hk-mr-S0z" id="Q5r-OW-kOQ"/>
                         <outlet property="extraLabel" destination="tXa-pN-kde" id="rGa-Bc-Not"/>
-                        <outlet property="firstTabButton" destination="F4r-aB-2NT" id="00I-k6-JJ4"/>
                         <outlet property="flagBadgeView" destination="p6U-XI-uR5" id="20J-8K-lmO"/>
                         <outlet property="headerImageView" destination="7dE-UQ-i9P" id="2C0-U0-sgB"/>
                         <outlet property="localizationImageView" destination="5qK-kb-gpp" id="3As-L5-orB"/>
                         <outlet property="localizationLabel" destination="P8R-h0-sfN" id="ZEW-pj-prA"/>
                         <outlet property="openningTimeImageView" destination="3Hi-F7-PDW" id="hZ2-ui-da7"/>
                         <outlet property="openningTimeLabel" destination="t88-Yw-fFm" id="hCJ-Vb-Oet"/>
-                        <outlet property="secondTabButton" destination="kOP-vY-fM2" id="0tV-CZ-zqp"/>
                         <outlet property="subtitleLabel" destination="dmM-zW-ovL" id="RZc-TC-97y"/>
-                        <outlet property="tabsIndicatorView" destination="tli-QU-KPq" id="uxq-jQ-OYV"/>
-                        <outlet property="thirdTabButton" destination="bXW-Wk-ICC" id="gFu-Hv-WrK"/>
                         <outlet property="titleLabel" destination="1nU-w6-gVL" id="8Bt-vY-qV8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xcH-Go-U80" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3921" y="125"/>
+            <point key="canvasLocation" x="3252" y="125"/>
         </scene>
         <!--Favorites View Controller-->
         <scene sceneID="XFG-wM-wQb">

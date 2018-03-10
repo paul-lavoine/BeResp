@@ -8,8 +8,11 @@
 
 import UIKit
 
+protocol ShopDetailDelegate {
+    func didSelect(meal: Meal)
+}
+
 class ShopContainerViewController: UIViewController {
-    
     
     @IBOutlet weak var embeddedContainerView: UIView!
     
@@ -18,9 +21,14 @@ class ShopContainerViewController: UIViewController {
     @IBOutlet weak var secondTabButton: UIButton!
     @IBOutlet weak var thirdTabButton: UIButton!
     
+    @IBOutlet weak var backButton: UIButton!
+    
     // Data
     var shop: Shop?
     var currentDisplay: CurrentDisplay = .description
+    
+    fileprivate var shopDetailviewController: ShopDetailViewController?
+    fileprivate var mealviewController: MealViewController?
     
     // Constraint
     @IBOutlet weak var tabsIndicatorLeadingConstraint: NSLayoutConstraint!
@@ -28,25 +36,28 @@ class ShopContainerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let navigationController: UINavigationController = UINavigationController(rootViewController: StoryboardManager.shopDetailViewController(shop: shop!))
-        self.embeddedContainerView = navigationController.view
+        shopDetailviewController?.view.frame = embeddedContainerView.frame
+        embeddedContainerView.addSubview((shopDetailviewController?.view)!)
     }
     
     func configure(with shop: Shop) {
         self.shop = shop
+        
+        shopDetailviewController = StoryboardManager.shopDetailViewController(shop: shop)
+        mealviewController = StoryboardManager.mealViewController(shop: shop, delegate: self)
     }
     
     // Actions
     @IBAction func showDescription(_ sender: Any) {
         animeTabs(display: .description)
-        
-        self.navigationController?.pushViewController(StoryboardManager.shopDetailViewController(shop: shop!), animated: true)
+        backButton.tintColor = .white
+        embeddedContainerView.addSubview((shopDetailviewController?.view)!)
     }
     
     @IBAction func showMenu(_ sender: Any) {
         animeTabs(display: .menu)
-        
-        self.navigationController?.pushViewController(StoryboardManager.mealViewController(shop: shop!), animated: true)
+        backButton.tintColor = .black
+        embeddedContainerView.addSubview((mealviewController?.view)!)
     }
     
     @IBAction func showComment(_ sender: Any) {
@@ -98,5 +109,11 @@ class ShopContainerViewController: UIViewController {
         firstTabButton.titleLabel?.font = UIFont.systemFont(ofSize: 13.0)
         secondTabButton.titleLabel?.font = UIFont.systemFont(ofSize: 13.0)
         thirdTabButton.titleLabel?.font = UIFont.systemFont(ofSize: 13.0)
+    }
+}
+
+extension ShopContainerViewController: ShopDetailDelegate {
+    func didSelect(meal: Meal) {
+        self.navigationController?.present(StoryboardManager.mealDetailViewController(meal: meal), animated: true, completion: nil)
     }
 }
