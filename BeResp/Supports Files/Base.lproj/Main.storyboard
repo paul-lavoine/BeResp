@@ -11,33 +11,41 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue-Medium</string>
+        </array>
+        <array key="PermanentMarker-Regular.ttf">
+            <string>PermanentMarker-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Home Presentation View Controller-->
         <scene sceneID="46v-WN-Zrq">
             <objects>
-                <viewController storyboardIdentifier="HomePresentationViewController" id="29g-jb-XKI" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomePresentationViewController" id="29g-jb-XKI" customClass="HomePresentationViewController" customModule="BeResp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ocm-xU-Tyr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="beresp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dYF-R4-Oax">
-                                <rect key="frame" x="161" y="80" width="53.5" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="149" y="130" width="77" height="31.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MJH-Ei-OKs">
-                                <rect key="frame" x="99.5" y="221" width="176.5" height="41"/>
+                                <rect key="frame" x="67" y="406" width="241" height="63"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">première platforme
 d'humains reponsables</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="PermanentMarker-Regular" family="Permanent Marker" pointSize="22"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inscrivez vous et rejoignez le mouvement" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hha-9E-doc">
-                                <rect key="frame" x="96.5" y="292" width="182" height="11"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                <rect key="frame" x="45.5" y="499" width="285.5" height="18"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -47,12 +55,17 @@ d'humains reponsables</string>
                             <constraint firstItem="Hha-9E-doc" firstAttribute="centerX" secondItem="Ocm-xU-Tyr" secondAttribute="centerX" id="H6Q-r2-GYN"/>
                             <constraint firstItem="MJH-Ei-OKs" firstAttribute="centerX" secondItem="Ocm-xU-Tyr" secondAttribute="centerX" id="IAM-Ue-geh"/>
                             <constraint firstItem="Hha-9E-doc" firstAttribute="top" secondItem="MJH-Ei-OKs" secondAttribute="bottom" constant="30" id="Mev-iL-jkp"/>
-                            <constraint firstItem="dYF-R4-Oax" firstAttribute="top" secondItem="Ocm-xU-Tyr" secondAttribute="top" constant="80" id="WEr-cU-N9s"/>
+                            <constraint firstItem="dYF-R4-Oax" firstAttribute="top" secondItem="Ocm-xU-Tyr" secondAttribute="top" constant="130" id="WEr-cU-N9s"/>
                             <constraint firstItem="dYF-R4-Oax" firstAttribute="centerX" secondItem="Ocm-xU-Tyr" secondAttribute="centerX" id="f23-0d-oxS"/>
-                            <constraint firstItem="MJH-Ei-OKs" firstAttribute="top" secondItem="dYF-R4-Oax" secondAttribute="bottom" constant="120" id="f9p-qi-7Hp"/>
+                            <constraint firstItem="F2o-PL-1zf" firstAttribute="bottom" secondItem="Hha-9E-doc" secondAttribute="bottom" constant="150" id="fAE-v9-y5d"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="F2o-PL-1zf"/>
                     </view>
+                    <connections>
+                        <outlet property="cationLabel" destination="Hha-9E-doc" id="6YM-pm-AUo"/>
+                        <outlet property="subtitleLabel" destination="MJH-Ei-OKs" id="jxl-Rs-cXU"/>
+                        <outlet property="titleLabel" destination="dYF-R4-Oax" id="4IC-jn-2b6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1YM-vM-wWR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -70,28 +83,27 @@ d'humains reponsables</string>
                                 <rect key="frame" x="0.0" y="20" width="375" height="444.5"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Alh-k1-jCw">
-                                        <rect key="frame" x="70" y="40" width="235" height="364.5"/>
+                                        <rect key="frame" x="100" y="40" width="175" height="364.5"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.29785235580000002" green="0.66300497169999995" blue="0.6756586738" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="Alh-k1-jCw" firstAttribute="leading" secondItem="Kr3-J1-GUf" secondAttribute="leading" constant="70" id="IP6-rC-MN6"/>
                                     <constraint firstItem="Alh-k1-jCw" firstAttribute="centerX" secondItem="Kr3-J1-GUf" secondAttribute="centerX" id="QTT-2S-WZu"/>
                                     <constraint firstItem="Alh-k1-jCw" firstAttribute="centerY" secondItem="Kr3-J1-GUf" secondAttribute="centerY" id="SFp-gF-2jz"/>
-                                    <constraint firstAttribute="trailing" secondItem="Alh-k1-jCw" secondAttribute="trailing" constant="70" id="br8-81-BjG"/>
+                                    <constraint firstAttribute="trailing" secondItem="Alh-k1-jCw" secondAttribute="trailing" constant="100" id="br8-81-BjG"/>
                                     <constraint firstItem="Alh-k1-jCw" firstAttribute="top" secondItem="Kr3-J1-GUf" secondAttribute="top" constant="40" id="uRC-b7-OG0"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y7b-uT-hQL">
-                                <rect key="frame" x="167" y="495" width="42" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="156.5" y="495" width="62.5" height="31.5"/>
+                                <fontDescription key="fontDescription" name="PermanentMarker-Regular" family="Permanent Marker" pointSize="22"/>
                                 <color key="textColor" red="0.4317985177" green="0.43027329440000001" blue="0.49020415540000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Im-bZ-tji">
-                                <rect key="frame" x="30" y="530.5" width="315" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.69431227445602417" green="0.69362145662307739" blue="0.72157329320907593" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <rect key="frame" x="30" y="541.5" width="315" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.43111109733581543" green="0.43012538552284241" blue="0.4964287281036377" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -491,9 +503,14 @@ d'humains reponsables</string>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="85q-SU-9w9">
                                 <rect key="frame" x="168" y="610" width="39" height="37"/>
                             </pageControl>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n9h-EW-g1f">
-                                <rect key="frame" x="309" y="40" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n9h-EW-g1f">
+                                <rect key="frame" x="10" y="40" width="45" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="Fbr-ly-jG7"/>
+                                    <constraint firstAttribute="height" constant="45" id="vho-gw-Ze4"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="down_arrow"/>
                                 <connections>
                                     <action selector="dismiss:" destination="Xd5-4Z-4jC" eventType="touchUpInside" id="hwV-me-PKZ"/>
                                 </connections>
@@ -504,10 +521,9 @@ d'humains reponsables</string>
                             <constraint firstItem="Ywz-ZK-Z3A" firstAttribute="top" secondItem="6hC-3g-fO0" secondAttribute="top" id="01Q-4y-Og3"/>
                             <constraint firstItem="n9h-EW-g1f" firstAttribute="top" secondItem="6hC-3g-fO0" secondAttribute="top" constant="20" id="5t1-eu-cfC"/>
                             <constraint firstItem="6hC-3g-fO0" firstAttribute="bottom" secondItem="85q-SU-9w9" secondAttribute="bottom" constant="20" id="AT3-DH-be3"/>
-                            <constraint firstItem="n9h-EW-g1f" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="obf-iH-3Q5" secondAttribute="leading" constant="20" symbolic="YES" id="NUq-nS-lXJ"/>
+                            <constraint firstItem="n9h-EW-g1f" firstAttribute="leading" secondItem="obf-iH-3Q5" secondAttribute="leading" constant="10" id="NUq-nS-lXJ"/>
                             <constraint firstItem="Ywz-ZK-Z3A" firstAttribute="leading" secondItem="6hC-3g-fO0" secondAttribute="leading" id="ae5-VJ-clP"/>
                             <constraint firstItem="85q-SU-9w9" firstAttribute="centerX" secondItem="6hC-3g-fO0" secondAttribute="centerX" id="jaw-as-rTg"/>
-                            <constraint firstItem="6hC-3g-fO0" firstAttribute="trailing" secondItem="n9h-EW-g1f" secondAttribute="trailing" constant="20" id="m3s-oI-7lt"/>
                             <constraint firstItem="Ywz-ZK-Z3A" firstAttribute="bottom" secondItem="6hC-3g-fO0" secondAttribute="bottom" id="mtQ-ww-vg0"/>
                             <constraint firstItem="6hC-3g-fO0" firstAttribute="trailing" secondItem="Ywz-ZK-Z3A" secondAttribute="trailing" id="pe9-BA-LOy"/>
                         </constraints>
@@ -545,37 +561,37 @@ d'humains reponsables</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bievenue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aMr-BX-yML">
-                                <rect key="frame" x="152.5" y="203" width="70" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="144" y="203" width="88" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" red="0.4317985177" green="0.43027329440000001" blue="0.49020415540000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Identifiez vous pour continuer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bBD-vS-GWP">
-                                <rect key="frame" x="73.5" y="224" width="228" height="21"/>
+                                <rect key="frame" x="73.5" y="229.5" width="228" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.4317985177" green="0.43027329440000001" blue="0.49020415540000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7yr-PA-uyB">
-                                <rect key="frame" x="20" y="285" width="335" height="21"/>
+                                <rect key="frame" x="20" y="290.5" width="335" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.4317985177" green="0.43027329440000001" blue="0.49020415540000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VIE-Lv-IOG">
-                                <rect key="frame" x="20" y="376" width="74" height="21"/>
+                                <rect key="frame" x="20" y="381.5" width="74" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.4317985177" green="0.43027329440000001" blue="0.49020415540000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R7I-Ui-oUH">
-                                <rect key="frame" x="205" y="442" width="150" height="30"/>
+                                <rect key="frame" x="205" y="447.5" width="150" height="30"/>
                                 <state key="normal" title="Mot de passe oublié ?">
                                     <color key="titleColor" red="0.43179851770401001" green="0.43027329444885254" blue="0.49020415544509888" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Tq-gT-28O">
-                                <rect key="frame" x="20" y="502" width="335" height="30"/>
+                                <rect key="frame" x="20" y="507.5" width="335" height="30"/>
                                 <color key="backgroundColor" red="0.29785235580000002" green="0.66300497169999995" blue="0.6756586738" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Connexion">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -585,23 +601,23 @@ d'humains reponsables</string>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="johndoe@gmail.com" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DQx-Uc-6R4">
-                                <rect key="frame" x="20" y="316" width="335" height="30"/>
+                                <rect key="frame" x="20" y="321.5" width="335" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="********" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qLX-oB-FDY">
-                                <rect key="frame" x="20" y="402" width="335" height="30"/>
+                                <rect key="frame" x="20" y="407.5" width="335" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FqL-JS-TLp">
-                                <rect key="frame" x="309" y="402" width="46" height="30"/>
+                                <rect key="frame" x="309" y="407.5" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GhW-a6-8Rl">
-                                <rect key="frame" x="62.5" y="552" width="250" height="30"/>
+                                <rect key="frame" x="62.5" y="557.5" width="250" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4wC-66-elm">
                                         <rect key="frame" x="151" y="0.0" width="99" height="30"/>
@@ -680,6 +696,9 @@ d'humains reponsables</string>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="QRH-zD-NVk"/>
+                    <connections>
+                        <outlet property="titleLabel" destination="xWZ-9s-Hje" id="G7E-8J-OPT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

@@ -48,6 +48,7 @@
 		A8C7A0BB204C1BBA00A41288 /* MealCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C7A0BA204C1BBA00A41288 /* MealCell.swift */; };
 		A8C7A0BD204C1BFA00A41288 /* MealCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8C7A0BC204C1BFA00A41288 /* MealCell.xib */; };
 		A8C7A0BF204C33BB00A41288 /* MealHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C7A0BE204C33BB00A41288 /* MealHeader.swift */; };
+		A8D383352054B57300B81280 /* HomePresentationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D383342054B57300B81280 /* HomePresentationViewController.swift */; };
 		A97A1A713A6EA15683A3126A /* Pods_BeResp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8C6B1761C371597D2225F74 /* Pods_BeResp.framework */; };
 /* End PBXBuildFile section */
 
@@ -96,6 +97,7 @@
 		A8C7A0BA204C1BBA00A41288 /* MealCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealCell.swift; sourceTree = "<group>"; };
 		A8C7A0BC204C1BFA00A41288 /* MealCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MealCell.xib; sourceTree = "<group>"; };
 		A8C7A0BE204C33BB00A41288 /* MealHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealHeader.swift; sourceTree = "<group>"; };
+		A8D383342054B57300B81280 /* HomePresentationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresentationViewController.swift; sourceTree = "<group>"; };
 		D8C6B1761C371597D2225F74 /* Pods_BeResp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeResp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E616BC2E983FB55310C51FC2 /* Pods-BeResp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeResp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BeResp/Pods-BeResp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -157,6 +159,7 @@
 			children = (
 				3A19D0092044349900FC1ADB /* HomeDescriptionViewController.swift */,
 				3A5945082041745800BE94AD /* HomePagerViewController.swift */,
+				A8D383342054B57300B81280 /* HomePresentationViewController.swift */,
 				3AC3D01820416C2E0086077E /* HomeViewController.swift */,
 			);
 			path = HomePage;
@@ -499,6 +502,7 @@
 				A8C7A0A3204AF76600A41288 /* MenuHeaderView.swift in Sources */,
 				3A19D00A2044349900FC1ADB /* HomeDescriptionViewController.swift in Sources */,
 				A8C7A0B1204B4E6300A41288 /* ShopDetailViewController.swift in Sources */,
+				A8D383352054B57300B81280 /* HomePresentationViewController.swift in Sources */,
 				3A09D503204AAE72009D387F /* StoryboardManager.swift in Sources */,
 				3AC3D002204164D90086077E /* LoginViewController.swift in Sources */,
 				A8C7A0BB204C1BBA00A41288 /* MealCell.swift in Sources */,

@@ -10,8 +10,14 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var titleLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let attrString = NSMutableAttributedString(string: "be", attributes: [ NSAttributedStringKey.font: UIFont.systemFont(ofSize: 35) ])
+        attrString.append(NSMutableAttributedString(string: "resp", attributes: [NSAttributedStringKey.font: UIFont.boldSystemFont(ofSize: 35)]))
+        titleLabel.attributedText = attrString
         
         let controller = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "HomeViewController")
         self.navigationController?.present(controller, animated: true, completion: nil)
