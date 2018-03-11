@@ -54,6 +54,8 @@ class MenuViewController: UIViewController {
 
 extension MenuViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        
         let type: MenuType = tabsMenu[indexPath.row]
         var viewController: UIViewController?
         
@@ -73,13 +75,24 @@ extension MenuViewController: UITableViewDelegate {
         break
         }
         
-        guard let vc = viewController else {
+        guard let selectedViewController = viewController else {
             return
         }
         let mainViewController = sideMenuController!
         let navigationController = mainViewController.rootViewController as! NavigationController
-        navigationController.pushViewController(vc, animated: true)
         
+        
+        for vc in navigationController.viewControllers {
+            if vc.isKind(of: selectedViewController.classForCoder)  {
+                if vc != navigationController.viewControllers.first {
+                    navigationController.popToViewController(selectedViewController, animated: true)
+                }
+                mainViewController.hideLeftView(animated: true, completionHandler: nil)
+                return
+            }
+        }
+        
+        navigationController.pushViewController(selectedViewController, animated: true)
         mainViewController.hideLeftView(animated: true, completionHandler: nil)
     }
 }
