@@ -59,6 +59,9 @@ extension MenuViewController: UITableViewDelegate {
         let type: MenuType = tabsMenu[indexPath.row]
         var viewController: UIViewController?
         
+        let mainViewController = sideMenuController!
+        let navigationController = mainViewController.rootViewController as! NavigationController
+        
         switch type {
         case .profil:
             viewController = StoryboardManager.profileViewController()
@@ -72,15 +75,12 @@ extension MenuViewController: UITableViewDelegate {
             break
         case .loggout:
             self.navigationController?.popToRootViewController(animated: true)
-        break
+            break
         }
         
         guard let selectedViewController = viewController else {
             return
         }
-        let mainViewController = sideMenuController!
-        let navigationController = mainViewController.rootViewController as! NavigationController
-        
         
         for vc in navigationController.viewControllers {
             if vc.isKind(of: selectedViewController.classForCoder)  {
