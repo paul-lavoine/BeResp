@@ -33,6 +33,7 @@ class LoginViewController: UIViewController {
         
         let controller = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "HomeViewController")
         self.navigationController?.present(controller, animated: false, completion: nil)
+        self.navigationController?.interactivePopGestureRecognizer?.isEnabled = false
     }
     
     override func viewWillAppear(_ animated: Bool) {
