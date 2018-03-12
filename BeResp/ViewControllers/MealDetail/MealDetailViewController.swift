@@ -55,10 +55,3 @@ class MealDetailViewController: UIViewController {
         self.dismiss(animated: true, completion: nil)
     }
 }
-
-extension MealDetailViewController: UITextFieldDelegate {
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-        return true
-    }
-}

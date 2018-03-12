@@ -24,6 +24,13 @@
 		3A3AB0A120417CB900A94EE8 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3AB0A020417CB800A94EE8 /* NavigationController.swift */; };
 		3A3AB0A320417D1F00A94EE8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3AB0A220417D1F00A94EE8 /* MainViewController.swift */; };
 		3A5945092041745800BE94AD /* HomePagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5945082041745800BE94AD /* HomePagerViewController.swift */; };
+		3A6A180B2057233700704932 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3A6A18092057233700704932 /* Montserrat-Bold.ttf */; };
+		3A6A180C2057233700704932 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3A6A180A2057233700704932 /* Montserrat-Regular.ttf */; };
+		3A6A18102057234900704932 /* MyriadPro-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3A6A180D2057234800704932 /* MyriadPro-Regular.otf */; };
+		3A6A18112057234900704932 /* MyriadPro-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3A6A180E2057234800704932 /* MyriadPro-Semibold.otf */; };
+		3A6A18122057234900704932 /* MyriadPro-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3A6A180F2057234800704932 /* MyriadPro-Light.otf */; };
+		3A6A1814205725D100704932 /* MyriadPro-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3A6A1813205725D100704932 /* MyriadPro-Bold.otf */; };
+		3A6A181620572A5F00704932 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6A181520572A5F00704932 /* UIViewController.swift */; };
 		3AC3D000204164D90086077E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC3CFFF204164D90086077E /* AppDelegate.swift */; };
 		3AC3D002204164D90086077E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC3D001204164D90086077E /* LoginViewController.swift */; };
 		3AC3D005204164D90086077E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AC3D003204164D90086077E /* Main.storyboard */; };
@@ -70,6 +77,13 @@
 		3A3AB0A020417CB800A94EE8 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		3A3AB0A220417D1F00A94EE8 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		3A5945082041745800BE94AD /* HomePagerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePagerViewController.swift; sourceTree = "<group>"; };
+		3A6A18092057233700704932 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		3A6A180A2057233700704932 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		3A6A180D2057234800704932 /* MyriadPro-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MyriadPro-Regular.otf"; sourceTree = "<group>"; };
+		3A6A180E2057234800704932 /* MyriadPro-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MyriadPro-Semibold.otf"; sourceTree = "<group>"; };
+		3A6A180F2057234800704932 /* MyriadPro-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MyriadPro-Light.otf"; sourceTree = "<group>"; };
+		3A6A1813205725D100704932 /* MyriadPro-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MyriadPro-Bold.otf"; sourceTree = "<group>"; };
+		3A6A181520572A5F00704932 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		3AC3CFFC204164D90086077E /* BeResp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeResp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AC3CFFF204164D90086077E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3AC3D001204164D90086077E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -128,6 +142,7 @@
 			children = (
 				3A09D502204AAE72009D387F /* StoryboardManager.swift */,
 				A8A0E609204C411200D21DFB /* UIView+Tools.swift */,
+				3A6A181520572A5F00704932 /* UIViewController.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -135,6 +150,12 @@
 		3A15EDB120500B5400A6AF75 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				3A6A18092057233700704932 /* Montserrat-Bold.ttf */,
+				3A6A180A2057233700704932 /* Montserrat-Regular.ttf */,
+				3A6A1813205725D100704932 /* MyriadPro-Bold.otf */,
+				3A6A180F2057234800704932 /* MyriadPro-Light.otf */,
+				3A6A180D2057234800704932 /* MyriadPro-Regular.otf */,
+				3A6A180E2057234800704932 /* MyriadPro-Semibold.otf */,
 				3A15EDB820500B6900A6AF75 /* Yantramanav-Black.ttf */,
 				3A15EDB620500B6900A6AF75 /* Yantramanav-Bold.ttf */,
 				3A15EDB520500B6900A6AF75 /* Yantramanav-Light.ttf */,
@@ -407,15 +428,21 @@
 			files = (
 				3AC3D00A204164D90086077E /* LaunchScreen.storyboard in Resources */,
 				3AC3D007204164D90086077E /* Assets.xcassets in Resources */,
+				3A6A18102057234900704932 /* MyriadPro-Regular.otf in Resources */,
 				3A15EDBD20500B6900A6AF75 /* Yantramanav-Thin.ttf in Resources */,
+				3A6A180C2057233700704932 /* Montserrat-Regular.ttf in Resources */,
 				A8C7A0BD204C1BFA00A41288 /* MealCell.xib in Resources */,
+				3A6A18112057234900704932 /* MyriadPro-Semibold.otf in Resources */,
 				3A15EDBB20500B6900A6AF75 /* Yantramanav-Light.ttf in Resources */,
+				3A6A18122057234900704932 /* MyriadPro-Light.otf in Resources */,
 				3A15EDBC20500B6900A6AF75 /* Yantramanav-Bold.ttf in Resources */,
+				3A6A180B2057233700704932 /* Montserrat-Bold.ttf in Resources */,
 				3A15EDBF20500B6900A6AF75 /* Yantramanav-Medium.ttf in Resources */,
 				3AC3D005204164D90086077E /* Main.storyboard in Resources */,
 				3A15EDBA20500B6900A6AF75 /* Yantramanav-Regular.ttf in Resources */,
 				3A15EDB320500B6000A6AF75 /* PermanentMarker-Regular.ttf in Resources */,
 				3A15EDBE20500B6900A6AF75 /* Yantramanav-Black.ttf in Resources */,
+				3A6A1814205725D100704932 /* MyriadPro-Bold.otf in Resources */,
 				A8A0E608204C35EB00D21DFB /* FlagBadge.xib in Resources */,
 				A8C7A0AD204B10E600A41288 /* ShopCell.xib in Resources */,
 			);
@@ -498,6 +525,7 @@
 				A8C7A0A6204B029E00A41288 /* ShopsController.swift in Sources */,
 				3A15EDC22050132100A6AF75 /* ShopContainerViewController.swift in Sources */,
 				3AC3D012204169EC0086077E /* ProfileViewController.swift in Sources */,
+				3A6A181620572A5F00704932 /* UIViewController.swift in Sources */,
 				3A3AB0A120417CB900A94EE8 /* NavigationController.swift in Sources */,
 				A8C7A0A3204AF76600A41288 /* MenuHeaderView.swift in Sources */,
 				3A19D00A2044349900FC1ADB /* HomeDescriptionViewController.swift in Sources */,

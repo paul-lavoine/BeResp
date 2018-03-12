@@ -17,11 +17,12 @@ class HomePresentationViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let fontSize = CGFloat(45.0)
         let attrString = NSMutableAttributedString(string: "be",
-                                                   attributes: [ NSAttributedStringKey.font: UIFont.systemFont(ofSize: 35) ])
+                                                   attributes: [ NSAttributedStringKey.font: UIFont.init(name: "MyriadPro-Light", size: fontSize)!])
         
         attrString.append(NSMutableAttributedString(string: "resp",
-                                                    attributes: [NSAttributedStringKey.font: UIFont.boldSystemFont(ofSize: 35)]))
+                                                    attributes: [NSAttributedStringKey.font: UIFont.init(name: "MyriadPro-Bold", size: fontSize)!]))
         
         titleLabel.attributedText = attrString
     }
