@@ -32,7 +32,7 @@ class LoginViewController: UIViewController {
         addTextFielBorderBottom(with: passwordTextField, color: .lightGray)
         
         let controller = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "HomeViewController")
-        self.navigationController?.present(controller, animated: true, completion: nil)
+        self.navigationController?.present(controller, animated: false, completion: nil)
     }
     
     override func viewWillAppear(_ animated: Bool) {
